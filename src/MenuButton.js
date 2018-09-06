@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+
+import React, { Component } from "react";
+
 
 export default class MenuButton extends Component {
   constructor() {
@@ -10,7 +12,12 @@ export default class MenuButton extends Component {
   render() {
     return (
       <div className="menu-button">
-        <img className="menu-button-icon" id={this.props.purpose} src={this.props.icon} />
+
+        <img
+          className="menu-button-icon"
+          id={this.props.purpose}
+          src={this.props.icon}
+        />
       </div>
     );
   }
