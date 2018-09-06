@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import image from "./Images/me.jpg";
 import settingsImage from "./Images/settings.svg";
 import Achievement from "./Achievement";
+import Menu from "./Menu";
 
 export default class Home extends Component {
   constructor() {
@@ -21,6 +22,7 @@ export default class Home extends Component {
           <Achievement />
           <Achievement />
           <Achievement />
+          <Menu />
         </section>
       </div>
     );

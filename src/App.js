@@ -29,13 +29,16 @@ const BasicExample = () => (
     </div>
   </Router>
 );
+// we only actually need one route path
 
-const Butt = () => (
-  <div className="App">
-    <Home />
-    <Menu />
-  </div>
-);
+// <Route path ={/variable} component = {variable}/>
+
+// const Home = () => (
+//   <div className="App">
+//     <Home />
+//     <Menu />
+//   </div>
+// );
 
 const Play = () => (
   <div>
