@@ -7,6 +7,7 @@ body {
   text-align: center;
   width: 100vw;
   background-color: red;
+
 }
 
 .App-title {
@@ -17,7 +18,7 @@ body {
   font-size: large;
 }
 
-/* MENU COMPONENT */
+
 .menu {
   background-color: #fcfcfc;
   /* background-color: #182825; */
@@ -25,8 +26,6 @@ body {
   position: fixed;
   top: 92%;
   width: 100%;
-  z-index: 100;
-  display: inline;
 }
 
 .menu-button {
