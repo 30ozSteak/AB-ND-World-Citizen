@@ -21,14 +21,11 @@
 .App-intro {
   font-size: large;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+    center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
+  overflow: hidden;
 }
 
 .spinning-globe {
@@ -44,4 +41,14 @@
   box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
   position: relative;
   animation: 🗺️ 35s linear infinite;
+}
+
+@keyframes 🗺️ {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 719px 0;
+  }
 }

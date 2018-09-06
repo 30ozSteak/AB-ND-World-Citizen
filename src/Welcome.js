@@ -5,10 +5,7 @@ const Welcome = props => {
     <div className="welcome-message">
       <div class="spinning-globe" />
       <h1>World Citizen</h1>
-      <h5 className>A Simple Weather Searching App</h5>
-      <a href="https://github.com/30ozSteak/KD-ND-Weatherly">
-        <i className="fab fa-github" />
-      </a>
+      <h5 className>Rewarding You for the Good You Already Do</h5>
     </div>
   );
 };
