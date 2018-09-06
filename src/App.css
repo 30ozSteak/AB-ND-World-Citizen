@@ -41,18 +41,40 @@ body {
   }
 }
 
-h1 {
+.welcome-message h1 {
   font-size: 4rem;
   color: white;
   text-shadow: 2px 2px 2px black;
 }
 
-h5 {
+.welcome-message h5 {
   color: white;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-h5 span {
+.welcome-message h5 span {
   font-size: 1rem;
+}
+
+.welcome-screen input {
+  display: block;
+  padding: 1rem 0 1rem 1rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.335);
+  border: 0;
+  color: white;
+  width: 30rem;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+.welcome-screen input::placeholder {
+  color: white;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.welcome-screen p {
+  color: white;
+  letter-spacing: 2px;
 }
