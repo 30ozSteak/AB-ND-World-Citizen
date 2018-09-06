@@ -23,6 +23,25 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-globe {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 150px;
+  margin-bottom: 2.5rem;
+  left: 50%;
+  background: center / cover url(img/earth.png);
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
+  position: relative;
+  animation: 🗺️ 35s linear infinite;
 }
