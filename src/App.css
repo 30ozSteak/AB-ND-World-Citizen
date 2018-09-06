@@ -75,6 +75,38 @@ body {
 }
 
 .welcome-screen p {
-  color: white;
+  color: rgb(209, 209, 209);
   letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-screen p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.welcome-screen button {
+  width: 30rem;
+  display: block;
+  padding: 1rem 0 1rem 1rem;
+  border: 0;
+  margin: 0.5rem auto 0.5rem auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.welcome-screen button:hover {
+  filter: brightness(110%);
+}
+
+.welcome-screen .login-button {
+  background: linear-gradient(rgba(60, 143, 199, 1), rgba(86, 195, 203, 1));
+}
+
+.welcome-screen .register-button {
+  background: rgb(185, 185, 185);
 }

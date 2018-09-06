@@ -15,6 +15,10 @@ class Login extends Component {
           <input type="password" className="password" placeholder="Password" />
         </form>
         <p>Forgot Your Login?</p>
+        <form>
+          <button className="login-button">Login</button>
+          <button className="register-button">Register</button>
+        </form>
       </div>
     );
   }
