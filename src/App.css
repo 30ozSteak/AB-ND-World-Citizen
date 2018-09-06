@@ -1,112 +1,117 @@
-* {
-  font-family: "Open Sans", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+  background-image: linear-gradient(#3c8fc7, #3c8fc7, #56c3cb);
 }
 
 .App {
-  text-align: center;
-}
-
-body {
   height: 100vh;
-  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-    center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
-  /* overflow: hidden; */
+  text-align: center;
+  width: 100vw;
+  background-color: red;
 }
 
-.spinning-globe {
-  width: 200px;
-  height: 200px;
-  background: #fff;
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* MENU COMPONENT */
+.menu {
+  background-color: #fcfcfc;
+  /* background-color: #182825; */
+  height: 8%;
+  position: fixed;
+  top: 92%;
+  width: 100%;
+  z-index: 100;
+  display: inline;
+}
+
+.menu-button {
+  display: inline-flex;
+  justify-content: space-around;
+  height: 8vh;
+  width: 33vw;
+}
+
+.menu-button-icon {
+  filter: invert(40%) sepia() saturate(100%) hue-rotate(200deg);
+}
+
+#home-button,
+#nearby-button {
+  height: 30px;
+}
+
+#search-button {
+  padding-top: 10px;
+  height: 40px;
+}
+
+#home-button:hover,
+#nearby-button:hover,
+#search-button:hover {
+  filter: invert(70%) sepia() saturate(7000%) hue-rotate(190deg);
+}
+
+/* HOME COMPONENT */
+#home-profile-picture {
+  background-color: grey;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
-  top: 150px;
-  margin-bottom: 4.5rem;
-  left: 50%;
-  background: center / cover url(img/earth.png);
-  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
-  position: relative;
-  animation: 🗺️ 35s linear infinite;
+  box-shadow: 0px 0px 10px #222;
+  height: 10em;
+  left: calc(50% - 5em);
+  position: fixed;
+  top: 4em;
+  width: 10em;
 }
 
-@keyframes 🗺️ {
-  0% {
-    background-position: 0 0;
+#home-settings-icon {
+  filter: invert(30%);
+  height: 1.75em;
+  position: absolute;
+  right: 0.75em;
+  top: 0.75em;
+}
+
+#home-container {
+  background-color: #fcfcfc;
+  height: 80vh;
+  margin-top: 20vh;
+  padding-top: 10em;
+  width: 100%;
+  z-index: 0;
+}
+
+/* ACHIEVEMENT COMPONENT */
+.achievement-container {
+  height: 3em;
+  margin: 1em auto;
+}
+
+.achievement-slider {
+  background-color: #dedede;
+  border-radius: 0.5em;
+  height: 2em;
+  margin: auto;
+  width: 15em;
+}
+
+.achievement-slider-fill {
+  background-color: #3c8fc7;
+  border-radius: 0.5em;
+  color: #fcfcfc;
+  height: 100%;
+  width: 40%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  100% {
-    background-position: 719px 0;
+  to {
+    transform: rotate(360deg);
   }
-}
-
-.welcome-message h1 {
-  font-size: 4rem;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-}
-
-.welcome-message h5 {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.welcome-message h5 span {
-  font-size: 1rem;
-}
-
-.welcome-screen input {
-  display: block;
-  padding: 1rem 0 1rem 1rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.335);
-  border: 0;
-  color: white;
-  width: 30rem;
-  margin: 0.5rem auto 0.5rem auto;
-}
-
-.welcome-screen input::placeholder {
-  color: white;
-  font-size: 1rem;
-  padding-left: 1rem;
-}
-
-.welcome-screen p {
-  color: rgb(209, 209, 209);
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.welcome-screen p:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.welcome-screen button {
-  width: 30rem;
-  display: block;
-  padding: 1rem 0 1rem 1rem;
-  border: 0;
-  margin: 0.5rem auto 0.5rem auto;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: white;
-  cursor: pointer;
-}
-
-.welcome-screen button:hover {
-  filter: brightness(110%);
-}
-
-.welcome-screen .login-button {
-  background: linear-gradient(rgba(60, 143, 199, 1), rgba(86, 195, 203, 1));
-}
-
-.welcome-screen .register-button {
-  background: rgb(185, 185, 185);
 }
