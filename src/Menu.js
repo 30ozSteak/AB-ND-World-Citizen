@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 
 import MenuButton from "./MenuButton";
@@ -5,6 +6,8 @@ import homeImage from "./Images/home.svg";
 import searchImage from "./Images/search.svg";
 import nearbyImage from "./Images/nearby.svg";
 import { NavLink } from "react-router-dom";
+
+
 
 export default class Menu extends Component {
   constructor() {
@@ -41,3 +44,4 @@ export default class Menu extends Component {
     );
   }
 }
+
