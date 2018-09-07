@@ -6,6 +6,7 @@ import Home from "./Home";
 import Menu from "./Menu";
 import Play from "./Play";
 import Social from "./Social";
+import PageContent from "./page-content";
 
 export default class App extends Component {
   render() {
