@@ -9,36 +9,12 @@ import Menu from "./Menu";
 const BasicExample = () => (
   <Router>
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/play">Play</Link>
-        </li>
-        <li>
-          <Link to="/social">Social</Link>
-        </li>
-      </ul>
-
-      <hr />
-
       <Route exact path="/" component={Home} />
       <Route path="/play" component={Play} />
       <Route path="/social" component={Social} />
     </div>
   </Router>
 );
-// we only actually need one route path
-
-// <Route path ={/variable} component = {variable}/>
-
-// const Home = () => (
-//   <div className="App">
-//     <Home />
-//     <Menu />
-//   </div>
-// );
 
 const Play = () => (
   <div>
