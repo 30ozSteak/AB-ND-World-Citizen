@@ -11,7 +11,7 @@ export default class Achievement extends Component {
     return (
       <div className="achievement-container">
         <div className="achievement-slider">
-          <div className="achievement-slider-fill">40%</div>
+          <div className="achievement-slider-fill" />
         </div>
       </div>
     );
