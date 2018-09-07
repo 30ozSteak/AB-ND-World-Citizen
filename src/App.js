@@ -1,5 +1,4 @@
-
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
@@ -35,13 +34,6 @@ const Social = ({ match }) => (
   </div>
 );
 
-export default BasicExample;
-
-import React, { Component } from 'react';
-
-import './App.css';
-import Menu from './Menu';
-
 class App extends Component {
   render() {
     return (
@@ -53,4 +45,3 @@ class App extends Component {
 }
 
 export default App;
-
