@@ -1,23 +1,14 @@
 body {
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--blueSteel);
+  --blackSteak: rgb(41, 41, 41);
+  --offWhite: #fcfcfc;
+  --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
 }
 
 .App {
   height: 100%;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .App-title {
@@ -29,7 +20,7 @@ body {
 }
 
 .menu {
-  background-color: #fcfcfc;
+  background-color: var(--offWhite);
   height: 8%;
   position: fixed;
   top: 92%;
@@ -84,7 +75,7 @@ body {
 }
 
 #home-container {
-  background-color: #fcfcfc;
+  background-color: var(--offWhite);
   height: 40rem;
   /* margin-top: 20vh; */
   padding-top: 10em;
@@ -112,7 +103,7 @@ body {
 .achievement-slider-fill {
   background: linear-gradient(to right, #91eae4, #86a8e7);
   border-radius: 0.5em;
-  color: #fcfcfc;
+  color: var(--offWhite);
   height: 100%;
   width: 40%;
 }
