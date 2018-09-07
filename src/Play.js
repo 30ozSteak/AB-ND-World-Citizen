@@ -12,6 +12,7 @@ export default class Play extends Component {
   render() {
     return (
       <div>
+        <h1> BUTTS </h1>
         <Menu />
       </div>
     );

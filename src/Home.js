@@ -15,8 +15,12 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <img id="home-settings-icon" src={settingsImage} />
-        <img id="home-profile-picture" src={image} />
+        <img
+          id="home-settings-icon"
+          alt="what you click on to get to the settings page"
+          src={settingsImage}
+        />
+        <img id="home-profile-picture" alt="the users profile" src={image} />
         <section id="home-container">
           <Achievement />
           <Achievement />
