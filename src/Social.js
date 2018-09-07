@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Menu from "./Menu";
+import Play from "./Play";
 import "./App.css";
 
-export default class Play extends Component {
+export default class Social extends Component {
   constructor() {
     super();
 

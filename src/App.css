@@ -6,8 +6,6 @@ body {
   height: 100vh;
   text-align: center;
   width: 100vw;
-  background-color: red;
-
 }
 
 .App-title {
@@ -17,7 +15,6 @@ body {
 .App-intro {
   font-size: large;
 }
-
 
 .menu {
   background-color: #fcfcfc;
