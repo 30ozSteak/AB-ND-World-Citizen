@@ -1,5 +1,45 @@
+* {
+  --blackSteak: rgb(41, 41, 41);
+  --offWhite: #fcfcfc;
+  --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7);
+  background-color: var(--blackSteak);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
 form input {
   display: block;
   padding: 1rem 1.5rem;
   margin: 1;
+  font-size: 1rem;
+}
+
+form input,
+button {
+  width: 18rem;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  text-align: center;
+}
+
+form button {
+  background: var(--blueSteel);
+  color: var(--offWhite);
+  width: 21rem;
+}
+
+form button:hover {
+  filter: brightness(110%);
 }
