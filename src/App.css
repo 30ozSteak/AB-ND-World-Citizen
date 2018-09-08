@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+.menu {
+  display: block !important;
+}
+
 .App-title {
   font-size: 1.5em;
 }

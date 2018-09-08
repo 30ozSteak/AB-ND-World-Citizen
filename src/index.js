@@ -9,8 +9,7 @@ import Login from "./Login";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Login />
-    {/* dont forget this used to be </App> */}
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );
