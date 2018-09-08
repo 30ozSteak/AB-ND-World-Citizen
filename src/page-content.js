@@ -10,6 +10,7 @@ export const PageContent = () => {
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
+        {/* <Route exact path="/Login" component={Login} /> */}
         <Route exact path="/Play" component={Play} />
         <Route exact path="/Social" component={Social} />
       </Switch>

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { PageContent } from "./page-content";
+
 import App from "./App";
 import Icon from "./icon";
+import LoginButton from "./LoginButton";
 import "./Login.css";
 
 class Login extends Component {
@@ -12,11 +15,12 @@ class Login extends Component {
   render(props) {
     return (
       <div className="welcome-screen">
+        {/* <PageContent /> */}
         <Icon />
         <form>
           <input type="text" className="username" placeholder="Username" />
           <input type="password" className="password" placeholder="Password" />
-          <button className="login-button">Login</button>
+          <LoginButton />
         </form>
       </div>
     );
