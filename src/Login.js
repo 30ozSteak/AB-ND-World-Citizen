@@ -15,7 +15,6 @@ class Login extends Component {
   render(props) {
     return (
       <div className="welcome-screen">
-        {/* <PageContent /> */}
         <Icon />
         <form>
           <input type="text" className="username" placeholder="Username" />
