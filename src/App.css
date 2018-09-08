@@ -127,6 +127,136 @@ body {
   margin: 1rem;
 }
 
+/* MENU */
 .menu {
   box-shadow: -1px -1px 5px rgba(71, 71, 71, 0.246);
+}
+
+/* NEARBY */
+.nearby-container {
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.nearby-card {
+  background-color: var(--offWhite);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  min-height: 8rem;
+  margin: 1rem auto;
+  padding-top: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.nearby-profile-pic {
+  border-radius: 2rem;
+  box-shadow: 0 1px 7px rgba(34, 34, 34, 0.39);
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+}
+
+.nearby-person-name {
+  color: #7f7fd5;
+  display: inline-block;
+  margin: 1rem;
+  text-align: left;
+  width: 60%;
+  vertical-align: top;
+}
+
+.nearby-distance {
+  color: var(--blackSteak);
+  margin: 1rem auto;
+  text-align: left;
+  width: 80%;
+}
+
+.nearby-achievement-list {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+
+.nearby-list-item {
+  background-color: #7f7fd5;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0 1rem 5px;
+  text-align: center;
+  width: 3rem;
+}
+
+.nearby-sorry {
+  color: var(--blackSteak);
+  padding: 0 1rem 1rem;
+}
+
+/* PLAY */
+.play-form {
+  background-color: var(--offWhite);
+  border-radius: 8px;
+  color: #7f7fd5;
+  height: 2.5rem;
+  margin: 4rem auto 0;
+  width: 80%;
+}
+
+.play-search-first-line {
+  display: inline-flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.play-input {
+  border: 0;
+  border-radius: 8px;
+  color: var(--blackSteak);
+  font-size: 1rem;
+  height: 100%;
+  outline: none;
+  padding: 0;
+  text-indent: 8px;
+  width: 70%;
+}
+
+.play-form-divider {
+  background-color: #86a8e7;
+  height: 2rem;
+  margin: 4px 0;
+  width: 1px;
+}
+
+.play-button {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #86a8e7;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 100%;
+  outline: none;
+  padding: 0;
+  width: 25%;
+}
+
+.play-search-dropdown {
+  background-color: green;
+  border-radius: 0 0 8px 8px;
+  display: inline-flex;
+  height: 5rem;
+  justify-content: space-around;
+  padding-top: 2rem;
+  margin: auto;
+  width: 95%;
+}
+
+.play-city-input {
+  height: 2rem;
+}
+
+.play-state-dropdown {
+  height: 2rem;
 }
