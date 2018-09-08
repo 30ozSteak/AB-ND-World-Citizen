@@ -6,7 +6,7 @@
   transform: translate(-50%, -50%);
   top: 250px;
   left: 50%;
-  background: center / cover url();
+  background: center / cover url(Images/earth.png);
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
   position: relative;
   animation: 🗺️ 35s linear infinite;
@@ -23,7 +23,7 @@ h1 {
   color: var(--offWhite);
 }
 
-/* @keyframes 🗺️ {
+@keyframes 🗺️ {
   0% {
     background-position: 0 0;
   }
@@ -31,4 +31,4 @@ h1 {
   100% {
     background-position: 719px 0;
   }
-} */
+}

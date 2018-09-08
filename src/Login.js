@@ -6,6 +6,8 @@ import Icon from "./icon";
 import LoginButton from "./LoginButton";
 import { NavLink } from "react-router-dom";
 import "./Login.css";
+import Slider from "react-slick";
+import SlickSlider from "./SlickSlider";
 
 export default class Login extends Component {
   constructor(props) {
@@ -16,6 +18,7 @@ export default class Login extends Component {
   render(props) {
     return (
       <div className="welcome-screen">
+        <SlickSlider />
         <Icon />
         <form>
           <input type="text" className="username" placeholder="Username" />
