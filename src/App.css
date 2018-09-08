@@ -13,7 +13,7 @@ body {
 }
 
 .menu {
-  display: block;
+  display: block !important;
 }
 
 .App-title {
