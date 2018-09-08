@@ -23,7 +23,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <img
+        <img 
           id="home-settings-icon"
           alt="what you click on to get to the settings page"
           src={settingsImage}
