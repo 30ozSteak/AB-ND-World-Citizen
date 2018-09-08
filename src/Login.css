@@ -39,3 +39,7 @@ form button {
   color: var(--offWhite);
   width: 21rem;
 }
+
+form button:hover {
+  filter: brightness(110%);
+}
