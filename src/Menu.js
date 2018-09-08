@@ -16,7 +16,7 @@ export default class Menu extends Component {
   render() {
     return (
       <div className="menu">
-        <NavLink to="/">
+        <NavLink to="/Home">
           <MenuButton
             id="home-button"
             icon={homeImage}
