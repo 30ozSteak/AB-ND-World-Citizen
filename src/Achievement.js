@@ -10,8 +10,13 @@ export default class Achievement extends Component {
   render() {
     return (
       <div className="achievement-container">
+        <h3 className="achievement-header">{this.props.stamp}</h3>
         <div className="achievement-slider">
           <div className="achievement-slider-fill" />
+          <div>
+            <span className="achievement-score" >8-20</span>
+            <img className="achievement-slider-image" src={this.props.trophyIcon} />
+          </div>
         </div>
       </div>
     );
