@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import App from "./App";
+import "./Login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -13,11 +14,7 @@ class Login extends Component {
         <form>
           <input type="text" className="username" placeholder="Username" />
           <input type="password" className="password" placeholder="Password" />
-        </form>
-        <p>Forgot Your Login?</p>
-        <form>
           <button className="login-button">Login</button>
-          <button className="register-button">Register</button>
         </form>
       </div>
     );
