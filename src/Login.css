@@ -2,9 +2,20 @@
   --blackSteak: rgb(41, 41, 41);
   --offWhite: #fcfcfc;
   --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7);
+  background-color: var(--blackSteak);
+  border: none;
+  padding: 0;
+  margin: 0;
 }
+
+.welcome-screen {
+  height: 100%;
+  background-color: var(--blackSteak);
+}
+
 form {
   width: 100%;
+  height: 100vh;
   text-align: center;
 }
 
@@ -17,7 +28,7 @@ form input {
 
 form input,
 button {
-  width: 20rem;
+  width: 18rem;
   margin: 0.5rem auto;
   font-size: 1rem;
   padding: 1rem 1.5rem;
@@ -25,10 +36,11 @@ button {
   border: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background-color: white;
 }
 
 form button {
   background: var(--blueSteel);
   color: var(--offWhite);
-  width: 23rem;
+  width: 20rem;
 }
