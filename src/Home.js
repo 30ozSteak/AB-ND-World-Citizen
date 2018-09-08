@@ -11,7 +11,9 @@ export default class Home extends Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      progress: 8
+    };
   }
 
   render() {
@@ -24,11 +26,11 @@ export default class Home extends Component {
         />
         <img id="home-profile-picture" alt="the users profile" src={image} />
         <section id="home-info-container">
-          <Achievement stamp={'Local Citizenship'} progress={40} trophyIcon={trophyImage} />
-          <Achievement stamp={'District Citizenship'} progress={40} trophyIcon={trophyImage} />
-          <Achievement stamp={'Regional Citizenship'} progress={40} trophyIcon={trophyImage} />
-          <Achievement stamp={'National Citizenship'} progress={40} trophyIcon={trophyImage} />
-          <Achievement stamp={'Global Citizenship'} progress={40} trophyIcon={trophyImage} />
+          <Achievement stamp={'Local Citizenship'} progress={this.state.progress} trophyIcon={trophyImage} />
+          <Achievement stamp={'District Citizenship'} progress={this.state.progress} trophyIcon={trophyImage} />
+          <Achievement stamp={'Regional Citizenship'} progress={this.state.progress} trophyIcon={trophyImage} />
+          <Achievement stamp={'National Citizenship'} progress={this.state.progress} trophyIcon={trophyImage} />
+          <Achievement stamp={'Global Citizenship'} progress={this.state.progress} trophyIcon={trophyImage} />
           <Menu />
         </section>
       </div>
