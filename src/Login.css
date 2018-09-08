@@ -8,14 +8,8 @@
   margin: 0;
 }
 
-.welcome-screen {
-  height: 100%;
-  background-color: var(--blackSteak);
-}
-
 form {
   width: 100%;
-  height: 100vh;
   text-align: center;
 }
 
@@ -37,10 +31,11 @@ button {
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color: white;
+  text-align: center;
 }
 
 form button {
   background: var(--blueSteel);
   color: var(--offWhite);
-  width: 20rem;
+  width: 21rem;
 }

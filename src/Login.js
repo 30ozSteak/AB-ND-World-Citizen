@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import App from "./App";
+import Icon from "./icon";
 import "./Login.css";
 
 class Login extends Component {
@@ -11,6 +12,7 @@ class Login extends Component {
   render(props) {
     return (
       <div className="welcome-screen">
+        <Icon />
         <form>
           <input type="text" className="username" placeholder="Username" />
           <input type="password" className="password" placeholder="Password" />

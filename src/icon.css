@@ -1,0 +1,34 @@
+.spinning-globe {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 250px;
+  left: 50%;
+  background: center / cover url();
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+  position: relative;
+  animation: 🗺️ 35s linear infinite;
+}
+
+* {
+  text-align: center;
+}
+
+h1 {
+  margin: 15rem 0 2rem 0;
+  font-size: 4rem;
+  font-weight: 200;
+  color: var(--offWhite);
+}
+
+/* @keyframes 🗺️ {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 719px 0;
+  }
+} */
