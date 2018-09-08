@@ -14,7 +14,7 @@ export default class Achievement extends Component {
         <div className="achievement-slider">
           <div className="achievement-slider-fill" />
           <div>
-            <span className="achievement-score" >8-20</span>
+            <span className="achievement-score" >{this.props.progress}-20</span>
             <img className="achievement-slider-image" src={this.props.trophyIcon} />
           </div>
         </div>
