@@ -191,5 +191,68 @@ body {
 
 /* PLAY */
 .play-form {
-  display: inline-block;
+  background-color: var(--offWhite);
+  border-radius: 8px;
+  color: #7f7fd5;
+  height: 2.5rem;
+  margin: 4rem auto 0;
+  width: 80%;
+}
+
+.play-search-first-line {
+  display: inline-flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.play-input {
+  border: 0;
+  border-radius: 8px;
+  color: var(--blackSteak);
+  font-size: 1rem;
+  height: 100%;
+  outline: none;
+  padding: 0;
+  text-indent: 8px;
+  width: 70%;
+}
+
+.play-form-divider {
+  background-color: #86a8e7;
+  height: 2rem;
+  margin: 4px 0;
+  width: 1px;
+}
+
+.play-button {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #86a8e7;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 100%;
+  outline: none;
+  padding: 0;
+  width: 25%;
+}
+
+.play-search-dropdown {
+  background-color: green;
+  border-radius: 0 0 8px 8px;
+  display: inline-flex;
+  height: 5rem;
+  justify-content: space-around;
+  padding-top: 2rem;
+  margin: auto;
+  width: 95%;
+}
+
+.play-city-input {
+  height: 2rem;
+}
+
+.play-state-dropdown {
+  height: 2rem;
 }
