@@ -5,6 +5,9 @@ import "./index.css";
 import "./slick-theme.css";
 import Icon from "./icon";
 import Step1 from "./Step1";
+import Step2 from "./Step2";
+import Step3 from "./Step3";
+import Step4 from "./Step4";
 
 export default class SlickSlider extends Component {
   render() {
@@ -24,10 +27,13 @@ export default class SlickSlider extends Component {
             <Step1 />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <Step2 />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <Step3 />
+          </div>
+          <div>
+            <Step4 />
           </div>
         </Slider>
       </div>

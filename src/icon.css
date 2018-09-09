@@ -21,6 +21,36 @@
   position: relative;
 }
 
+.step2icon {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin: 0 auto;
+  top: 100px;
+  background: center / cover url(Images/step2.png);
+  position: relative;
+}
+
+.step3icon {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin: 0 auto;
+  top: 100px;
+  background: center / cover url(Images/step3.png);
+  position: relative;
+}
+
+.step4icon {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin: 0 auto;
+  top: 100px;
+  background: center / cover url(Images/step4.png);
+  position: relative;
+}
+
 .icon * {
   text-align: center;
 }
@@ -34,9 +64,12 @@
   letter-spacing: 2px;
 }
 
-.step1 h1 {
+.step1 h1,
+.step2 h1,
+.step3 h1,
+.step4 h1 {
   font-size: 1.3rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .icon p {
