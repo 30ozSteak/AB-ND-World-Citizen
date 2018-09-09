@@ -9,9 +9,9 @@ export default class Step1 extends Component {
 
   render(props) {
     return (
-      <div>
-        <div className="spinning-globe" />
-        <p>Shop from Socially Conscious Companies</p>
+      <div className="icon step1">
+        <div className="step1icon" />
+        <h1>Shop from Socially Conscious Companies</h1>
       </div>
     );
   }
