@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./icon.css";
-import BrandName from "./BrandName";
 
-class Icon extends Component {
+export default class Step1 extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -10,13 +9,10 @@ class Icon extends Component {
 
   render(props) {
     return (
-      <div className="icon">
+      <div>
         <div className="spinning-globe" />
-        <BrandName />
-        <p>Swipe to Learn More</p>
+        <p>Shop from Socially Conscious Companies</p>
       </div>
     );
   }
 }
-
-export default Icon;
