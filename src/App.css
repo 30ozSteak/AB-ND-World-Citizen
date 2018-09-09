@@ -7,9 +7,13 @@ body {
 }
 
 .App {
-  height: 100%;
+  height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+.menu {
+  display: block !important;
 }
 
 .App-title {
@@ -273,7 +277,3 @@ body {
   vertical-align: middle;
   text-align: end;
 }
-
-
-
-
