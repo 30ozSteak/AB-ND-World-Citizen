@@ -239,7 +239,7 @@ body {
 }
 
 .play-search-dropdown {
-  background-color: green;
+  background-color: #fcfcfc;
   border-radius: 0 0 8px 8px;
   display: inline-flex;
   height: 5rem;
@@ -250,9 +250,23 @@ body {
 }
 
 .play-city-input {
+  background-color: #dedede;
+  color: var(--blackSteak);
+  border: none;
+  border-radius: 8px;
   height: 2rem;
+  text-indent: 1em;
+  outline: none;
 }
 
 .play-state-dropdown {
+  background-color: #dedede;
+  color: var(--blackSteak);
+  border: none;
+  border-radius: 8px;
   height: 2rem;
+}
+
+.Play-search-expand-button {
+  color: #7f7fd5;
 }
