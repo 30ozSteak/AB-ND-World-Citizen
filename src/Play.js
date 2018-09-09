@@ -34,9 +34,9 @@ export default class Play extends Component {
       <div className="play-container" >
         <form className="play-form" >
           <div className="play-search-first-line" >
-            <input onFocus={this.expandSearch} onBlur={this.closeSearch} className="play-input" type="text" placeholder="Address" />
+            <input onFocus={this.expandSearch} className="play-input" type="text" placeholder="Address" />
             <article className="play-form-divider" ></article>
-            <input className="play-button" type="button" value="Submit" />
+            <input className="play-button" type="button" onClick={this.closeSearch} value="Submit" />
           </div>
           {
             this.state.expanded && 
