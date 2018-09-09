@@ -269,6 +269,7 @@ body {
   border: none;
   border-radius: 8px;
   height: 2rem;
+  outline: none;
 }
 
 .Play-search-expand-button {
