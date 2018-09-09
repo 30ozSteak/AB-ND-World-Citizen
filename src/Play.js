@@ -28,23 +28,64 @@ export default class Play extends Component {
     })
   }
 
+  setAddress = (e) => {
+    this.setState({
+      address: e.target.value
+    })
+  }
+
+  setCity = (e) => {
+    this.setState({
+      city: e.target.value
+    })
+  }
+
+  setTheState = (e) => {
+    this.setState({
+      state: e.target.value
+    })
+  }
+
   render() {
     const states = UsStates
     return (
       <div className="play-container" >
         <form className="play-form" >
           <div className="play-search-first-line" >
-            <input onFocus={this.expandSearch} className="play-input" type="text" placeholder="Address" />
+            <input 
+              onFocus={this.expandSearch} 
+              className="play-input" 
+              type="text" 
+              placeholder="Address"
+              onChange={this.setAddress}
+            />
             <article className="play-form-divider" ></article>
-            <input className="play-button" type="button" onClick={this.closeSearch} value="Submit" />
+            <input 
+              className="play-button" 
+              type="button" 
+              onClick={this.closeSearch} 
+              value="Submit"
+            />
           </div>
           {
             this.state.expanded && 
             <div className="play-search-dropdown">
-              <input type="text" placeholder="City" className="play-city-input" />
+              <input 
+                type="text" 
+                placeholder="City" 
+                className="play-city-input"
+                onChange={this.setCity}
+              />
               <p className="state-select-word" >State:</p>
-              <select className="play-state-dropdown">
-                <option value="State" disabled >State</option>
+              <select 
+                className="play-state-dropdown"
+                onChange={this.setTheState}
+              >
+                <option
+                  value="State" 
+                  disabled >
+                  State
+                </option>
                 {
                   states.map(state => {
                   return <option value={state} > {state} </option>
