@@ -5,7 +5,7 @@ import App from "./App";
 import Icon from "./icon";
 import "./Login.css";
 
-class LoginButton extends Component {
+export default class LoginButton extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,5 +21,3 @@ class LoginButton extends Component {
     );
   }
 }
-
-export default LoginButton;
