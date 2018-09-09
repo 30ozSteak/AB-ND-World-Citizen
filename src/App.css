@@ -269,8 +269,11 @@ body {
   border: none;
   border-radius: 8px;
   height: 2rem;
+  outline: none;
 }
 
-.Play-search-expand-button {
-  color: #7f7fd5;
+.state-select-word {
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: end;
 }

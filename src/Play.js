@@ -42,7 +42,9 @@ export default class Play extends Component {
             this.state.expanded && 
             <div className="play-search-dropdown">
               <input type="text" placeholder="City" className="play-city-input" />
+              <p className="state-select-word" >State:</p>
               <select className="play-state-dropdown">
+                <option value="State" disabled >State</option>
                 {
                   states.map(state => {
                   return <option value={state} > {state} </option>
