@@ -22,25 +22,24 @@ export default class Play extends Component {
     })
   }
 
-  // closeSearch = () => {
-  //   this.setState({
-  //     expanded: false
-  //   })
-  // }
+  closeSearch = () => {
+    this.setState({
+      expanded: false
+    })
+  }
 
   render() {
     const states = UsStates
     return (
-      <div className="play-container"  >
+      <div className="play-container" >
         <form className="play-form" >
           <div className="play-search-first-line" >
-            <input type="button" value="+" onclick={this.expandSearch} />
-            <input className="play-input" type="text" placeholder="Address" />
+            <input onFocus={this.expandSearch} onBlur={this.closeSearch} className="play-input" type="text" placeholder="Address" />
             <article className="play-form-divider" ></article>
             <input className="play-button" type="button" value="Submit" />
           </div>
-          {/* { */}
-            {/* this.state.expanded &&  */}
+          {
+            this.state.expanded && 
             <div className="play-search-dropdown">
               <input type="text" placeholder="City" className="play-city-input" />
               <select className="play-state-dropdown">
@@ -51,7 +50,7 @@ export default class Play extends Component {
                 }
               </select>
             </div>
-          {/* } */}
+          }
         </form>
         <Menu />
       </div>
