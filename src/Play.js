@@ -51,7 +51,9 @@ export default class Play extends Component {
     const states = UsStates;
     return (
       <div className="play-container">
-        <form className="play-form">
+        <InfoButton />
+        <Settings />
+        <form className={"play-form " + (this.state.expanded && "play-form-expanded")}>
           <div className="play-search-first-line">
             <input
               onFocus={this.expandSearch}

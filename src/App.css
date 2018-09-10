@@ -1,5 +1,6 @@
 * {
   transition: 0.2s;
+  outline: none;
 }
 
 body {
@@ -106,6 +107,7 @@ body {
 
 .achievement-header {
   color: var(--blackSteak);
+  margin: 5px auto;
 }
 
 .achievement-slider {
@@ -124,11 +126,16 @@ body {
   width: 40%;
 }
 
+.achievement-data-container {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
 .achievement-score {
   color: #7f7fd5;
   font-size: 2rem;
   height: 5rem;
-  margin: 1rem;
+  margin-top: 3rem;
   vertical-align: middle;
 }
 
@@ -144,7 +151,7 @@ body {
 
 /* NEARBY */
 .nearby-container {
-  padding-top: 5rem;
+  padding: 5rem 0 5rem 0;
   width: 100%;
 }
 
@@ -178,8 +185,14 @@ body {
 .nearby-distance {
   color: var(--blackSteak);
   margin: 1rem auto;
+  letter-spacing: 0;
   text-align: left;
   width: 80%;
+}
+
+.nearby-achievements-header {
+  color: var(--blackSteak);
+  margin-bottom: 3px;
 }
 
 .nearby-achievement-list {
@@ -193,6 +206,7 @@ body {
   background-color: #7f7fd5;
   display: inline-flex;
   justify-content: space-between;
+  letter-spacing: 0;
   margin: 0 1rem 5px;
   text-align: center;
   width: 3rem;
@@ -200,20 +214,26 @@ body {
 
 .nearby-sorry {
   color: var(--blackSteak);
+  letter-spacing: 0;
   padding: 0 1rem 1rem;
 }
 
 /* PLAY */
 .play-form {
   background-color: var(--offWhite);
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   color: #7f7fd5;
   height: 2.5rem;
   margin: 4rem auto;
   width: 80%;
 }
 
+.play-form-expanded {
+  border-radius: 8px 8px 0 0;
+}
+
 .play-search-first-line {
+  border-radius: 8px;
   display: inline-flex;
   justify-content: space-around;
   height: 100%;
@@ -227,7 +247,6 @@ body {
   font-size: 1rem;
   height: 100%;
   margin: 0;
-  outline: none;
   padding: 0;
   text-align: left;
   text-indent: 8px;
@@ -251,10 +270,9 @@ body {
   height: 100%;
   letter-spacing: 0;
   margin: 0;
-  outline: none;
   padding: 0;
   width: 25%;
-}
+} 
 
 .play-search-dropdown {
   background-color: #fcfcfc;
@@ -278,7 +296,6 @@ body {
   padding: 0;
   text-align: left;
   text-indent: 1em;
-  outline: none;
 }
 
 .play-state-dropdown {
@@ -288,11 +305,12 @@ body {
   border-radius: 8px;
   height: 2rem;
   margin: 0 1rem 0 0;
-  outline: none;
 }
 
 .state-select-word {
+  font-size: 13px;
   margin: 8px;
+  padding-top: 0;
   text-align: end;
   vertical-align: middle;
 }

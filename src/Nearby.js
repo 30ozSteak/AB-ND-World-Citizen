@@ -25,11 +25,11 @@ export default class Nearby extends Component {
         {
           this.state.expanded &&
           <div>
-            <h4> Achievements:</h4>
+            <h4 className="nearby-achievements-header" > Achievements:</h4>
             <ul className="nearby-achievement-list" >
               {
                 !this.props.achievements.length &&
-                  <p className="nearby-sorry" >Sorry, {this.props.name} doesn't have any achievements yet</p>
+                  <p className="nearby-sorry" >{this.props.name} doesn't have any achievements yet</p>
               } 
               {
                 this.props.achievements && 
