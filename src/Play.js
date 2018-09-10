@@ -51,8 +51,6 @@ export default class Play extends Component {
     const states = UsStates;
     return (
       <div className="play-container">
-        <InfoButton />
-        <Settings />
         <form className="play-form">
           <div className="play-search-first-line">
             <input

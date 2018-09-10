@@ -18,8 +18,6 @@ export default class Social extends Component {
     const people = NearbyPeople;
     return (
       <div>
-        <InfoButton />
-        <Settings />
         <div className="nearby-container">
           {people.map(person => {
             return (
