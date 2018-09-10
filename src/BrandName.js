@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./icon.css";
 
-class BrandName extends Component {
+export default class BrandName extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,11 +9,9 @@ class BrandName extends Component {
 
   render(props) {
     return (
-      <div>
+      <div className="wc-name">
         <h1>World Citizen</h1>
       </div>
     );
   }
 }
-
-export default BrandName;

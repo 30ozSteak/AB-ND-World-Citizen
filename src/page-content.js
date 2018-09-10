@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import Play from "./Play";
 import Login from "./Login";
 import Social from "./Social";
+import Info from "./Info";
 
 export const PageContent = () => {
   return (
@@ -14,6 +15,7 @@ export const PageContent = () => {
         <Route exact path="/Home" component={Home} />
         <Route exact path="/Play" component={Play} />
         <Route exact path="/Social" component={Social} />
+        <Route exact path="/Info" component={Info} />
       </Switch>
     </div>
   );
