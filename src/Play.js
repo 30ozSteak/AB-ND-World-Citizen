@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Menu from "./Menu";
 import "./App.css";
-import { UsStates } from './NearbyPeople';
-
+import { UsStates } from "./NearbyPeople";
+import Settings from "./Settings";
 
 export default class Play extends Component {
   constructor() {
@@ -10,90 +10,86 @@ export default class Play extends Component {
 
     this.state = {
       expanded: false,
-      address: '',
-      city: '',
-      state: ''
+      address: "",
+      city: "",
+      state: ""
     };
   }
 
   expandSearch = () => {
     this.setState({
       expanded: true
-    })
-  }
+    });
+  };
 
   closeSearch = () => {
     this.setState({
       expanded: false
-    })
-  }
+    });
+  };
 
-  setAddress = (e) => {
+  setAddress = e => {
     this.setState({
       address: e.target.value
-    })
-  }
+    });
+  };
 
-  setCity = (e) => {
+  setCity = e => {
     this.setState({
       city: e.target.value
-    })
-  }
+    });
+  };
 
-  setTheState = (e) => {
+  setTheState = e => {
     this.setState({
       state: e.target.value
-    })
-  }
+    });
+  };
 
   render() {
-    const states = UsStates
+    const states = UsStates;
     return (
-      <div className="play-container" >
-        <form className="play-form" >
-          <div className="play-search-first-line" >
-            <input 
-              onFocus={this.expandSearch} 
-              className="play-input" 
-              type="text" 
+      <div className="play-container">
+        <Settings />
+        <form className="play-form">
+          <div className="play-search-first-line">
+            <input
+              onFocus={this.expandSearch}
+              className="play-input"
+              type="text"
               placeholder="Address"
               onChange={this.setAddress}
             />
-            <article className="play-form-divider" ></article>
-            <input 
-              className="play-button" 
-              type="button" 
-              onClick={this.closeSearch} 
+            <article className="play-form-divider" />
+            <input
+              className="play-button"
+              type="button"
+              onClick={this.closeSearch}
               value="Submit"
             />
           </div>
-          {
-            this.state.expanded && 
+          {this.state.expanded && (
             <div className="play-search-dropdown">
-              <input 
-                type="text" 
-                placeholder="City" 
+              <input
+                type="text"
+                placeholder="City"
                 className="play-city-input"
                 onChange={this.setCity}
               />
-              <p className="state-select-word" >State:</p>
-              <select 
+              <p className="state-select-word">State:</p>
+              <select
                 className="play-state-dropdown"
                 onChange={this.setTheState}
               >
-                <option
-                  value="State" 
-                  disabled >
+                <option value="State" disabled>
                   State
                 </option>
-                {
-                  states.map(state => {
-                  return <option value={state} > {state} </option>
-                  })
-                }
+                {states.map(state => {
+                  return <option value={state}> {state} </option>;
+                })}
               </select>
             </div>
-          }
+          )}
         </form>
         <Menu />
       </div>

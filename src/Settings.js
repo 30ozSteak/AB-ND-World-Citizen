@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./icon.css";
+import settingsImage from "./Images/settings.svg";
 
 export default class Settings extends Component {
   constructor(props) {
