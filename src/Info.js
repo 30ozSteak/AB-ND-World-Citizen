@@ -1,5 +1,5 @@
 import "./App.css";
-import Settings from "./Settings.js";
+import Notifications from "./Notifications.js";
 import InfoButton from "./InfoButton.js";
 import React, { Component } from "react";
 import Menu from "./Menu";
@@ -16,14 +16,11 @@ export default class Info extends Component {
   render() {
     return (
       <div className="grid">
-        <InfoButton />
-        <Settings />
-        <Menu />
         <BrandName />
         <h4>Give Back, Get Rewards, Have Fun</h4>
         <div className="info-container">
           <p className="info-title">About Us</p>
-          <p>Lead Engineer</p>
+          <p>CTO</p>
           <p>Justine Troyke</p>
           <p>Lead Developer</p>
           <p>Alex Bruce</p>

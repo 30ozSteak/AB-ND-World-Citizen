@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Menu from "./Menu";
 import "./App.css";
 import { UsStates } from "./NearbyPeople";
-import Settings from "./Settings";
+import Notifications from "./Notifications";
 import InfoButton from "./InfoButton.js";
 
 export default class Play extends Component {
@@ -51,9 +51,11 @@ export default class Play extends Component {
     const states = UsStates;
     return (
       <div className="play-container">
-        <InfoButton />
-        <Settings />
-        <form className={"play-form " + (this.state.expanded && "play-form-expanded")}>
+        <form
+          className={
+            "play-form " + (this.state.expanded && "play-form-expanded")
+          }
+        >
           <div className="play-search-first-line">
             <input
               onFocus={this.expandSearch}

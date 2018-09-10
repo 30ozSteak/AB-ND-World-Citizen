@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import image from "./Images/me.jpg";
-import settingsImage from "./Images/settings.svg";
 import Achievement from "./Achievement";
 import Menu from "./Menu";
 import trophyImage from "./Images/trophies/006-award-1.png";

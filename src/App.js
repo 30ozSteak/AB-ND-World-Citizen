@@ -5,7 +5,7 @@ import "./App.css";
 import Menu from "./Menu";
 import { PageContent } from "./page-content";
 import InfoButton from "./InfoButton";
-import Settings from "./Settings";
+import Notifications from "./Notifications";
 
 export default class App extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class App extends Component {
       <div className="App">
         <PageContent />
         <InfoButton />
-        <Settings />
+        <Notifications />
         <Menu />
       </div>
     );

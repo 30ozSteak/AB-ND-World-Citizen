@@ -4,8 +4,6 @@ import Nearby from "./Nearby";
 import "./App.css";
 import { NearbyPeople } from "./NearbyPeople";
 import profilePic from "./Images/me.jpg";
-import Settings from "./Settings.js";
-import InfoButton from "./InfoButton.js";
 
 export default class Social extends Component {
   constructor() {
