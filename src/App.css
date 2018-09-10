@@ -201,6 +201,7 @@ body {
   height: 2.5rem;
   margin: 4rem auto 0;
   width: 80%;
+  position: fixed;
 }
 
 .play-search-first-line {
