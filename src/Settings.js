@@ -8,6 +8,14 @@ export default class Settings extends Component {
   }
 
   render(props) {
-    return <div className="icon" />;
+    return (
+      <div>
+        <img
+          id="home-settings-icon"
+          alt="what you click on to get to the settings page"
+          src={settingsImage}
+        />
+      </div>
+    );
   }
 }
