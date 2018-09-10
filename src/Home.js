@@ -5,8 +5,6 @@ import settingsImage from "./Images/settings.svg";
 import Achievement from "./Achievement";
 import Menu from "./Menu";
 import trophyImage from "./Images/trophies/006-award-1.png";
-import Settings from "./Settings";
-import InfoButton from "./InfoButton";
 
 export default class Home extends Component {
   constructor() {
@@ -24,10 +22,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="topMenu">
-          <InfoButton />
-          <Settings />
-        </div>
+        <div className="topMenu" />
         <img id="home-profile-picture" alt="the users profile" src={image} />
         <section id="home-info-container">
           <Achievement
@@ -55,7 +50,6 @@ export default class Home extends Component {
             progress={this.state.globalProgress}
             trophyIcon={trophyImage}
           />
-          <Menu />
         </section>
       </div>
     );

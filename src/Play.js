@@ -93,7 +93,6 @@ export default class Play extends Component {
             </div>
           )}
         </form>
-        <Menu />
       </div>
     );
   }
