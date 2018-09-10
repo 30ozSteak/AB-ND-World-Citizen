@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import "./Login.css";
 import Slider from "react-slick";
 import SlickSlider from "./SlickSlider";
+import Icon from "./Icon";
 
 export default class Login extends Component {
   constructor(props) {

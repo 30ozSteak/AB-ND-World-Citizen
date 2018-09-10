@@ -6,6 +6,7 @@ import Play from "./Play";
 import Login from "./Login";
 import Social from "./Social";
 import Info from "./Info";
+import Icon from "./Icon";
 
 export const PageContent = () => {
   return (
