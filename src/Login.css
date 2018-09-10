@@ -12,10 +12,6 @@ form {
   text-align: center;
 }
 
-.menu {
-  display: none;
-}
-
 form input {
   display: block;
   padding: 1rem 1.5rem;

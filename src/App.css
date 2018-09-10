@@ -1,19 +1,19 @@
+* {
+  transition: 0.2s;
+}
+
 body {
   background: var(--blueSteel);
   background-attachment: fixed;
   --blackSteak: rgb(41, 41, 41);
   --offWhite: #fcfcfc;
   --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  height: 16rem;
 }
 
 .App {
-  height: 100vh;
   text-align: center;
   width: 100%;
-}
-
-.menu {
-  display: block !important;
 }
 
 .App-title {
