@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
+
 import "./index.css";
 import "./slick-theme.css";
-import Icon from "./Icon.js";
+import Icon from "./Icon";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
