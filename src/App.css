@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   --blackSteak: rgb(41, 41, 41);
   --offWhite: #fcfcfc;
-  --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  --blueSteel: linear-gradient(to bottom, #7145e3, #5694ee, #6ce9fc);
   height: 18rem;
 }
 
