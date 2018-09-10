@@ -15,7 +15,7 @@ export default class Info extends Component {
 
   render() {
     return (
-      <div>
+      <div className="grid">
         <InfoButton />
         <Settings />
         <Menu />
