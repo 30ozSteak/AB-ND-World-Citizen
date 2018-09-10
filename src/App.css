@@ -71,12 +71,22 @@ body {
   width: 10em;
 }
 
-#home-settings-icon {
-  filter: invert(30%);
+#home-settings-icon,
+#info-settings-icon {
   height: 1.75em;
   position: absolute;
   right: 0.75em;
   top: 0.75em;
+}
+
+#home-settings-icon:hover,
+#info-settings-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+#info-settings-icon {
+  left: 0.75em;
 }
 
 #home-info-container {

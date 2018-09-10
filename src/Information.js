@@ -12,7 +12,7 @@ export default class Settings extends Component {
     return (
       <div>
         <img
-          id="home-settings-icon"
+          id="info-settings-icon"
           alt="what you click on to get to the settings page"
           src={infoImage}
         />
