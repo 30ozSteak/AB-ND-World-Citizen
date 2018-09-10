@@ -19,13 +19,13 @@ export default class Login extends Component {
     return (
       <div className="welcome-screen">
         <SlickSlider />
-        <form>
+        {/* <form>
           <input type="text" className="username" placeholder="Username" />
           <input type="password" className="password" placeholder="Password" />
           <NavLink to="/Home">
             <LoginButton />
           </NavLink>
-        </form>
+        </form> */}
       </div>
     );
   }
