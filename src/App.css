@@ -7,8 +7,8 @@ body {
   background-attachment: fixed;
   --blackSteak: rgb(41, 41, 41);
   --offWhite: #fcfcfc;
-  --blueSteel: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
-  height: 16rem;
+  --blueSteel: linear-gradient(to bottom, #7145e3, #5694ee, #6ce9fc);
+  height: 18rem;
 }
 
 .App {
@@ -71,12 +71,22 @@ body {
   width: 10em;
 }
 
-#home-settings-icon {
-  filter: invert(30%);
+#home-settings-icon,
+#info-settings-icon {
   height: 1.75em;
   position: absolute;
   right: 0.75em;
   top: 0.75em;
+}
+
+#home-settings-icon:hover,
+#info-settings-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+#info-settings-icon {
+  left: 0.75em;
 }
 
 #home-info-container {
@@ -107,7 +117,7 @@ body {
 }
 
 .achievement-slider-fill {
-  background: linear-gradient(to right, #91eae4, #86a8e7);
+  background-color: #3974d3;
   border-radius: 0.5em;
   color: var(--offWhite);
   height: 100%;
@@ -196,12 +206,11 @@ body {
 /* PLAY */
 .play-form {
   background-color: var(--offWhite);
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   color: #7f7fd5;
   height: 2.5rem;
-  margin: 4rem auto 0;
+  margin: 4rem auto;
   width: 80%;
-  position: fixed;
 }
 
 .play-search-first-line {
@@ -250,12 +259,13 @@ body {
 .play-search-dropdown {
   background-color: #fcfcfc;
   border-radius: 0 0 8px 8px;
+  border-top: 1px solid #86a8e7;
   display: inline-flex;
   height: 3rem;
   justify-content: space-around;
   padding-top: 1rem;
   margin: auto;
-  width: 95%;
+  width: 100%;
 }
 
 .play-city-input {

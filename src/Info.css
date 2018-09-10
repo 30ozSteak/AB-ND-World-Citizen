@@ -1,0 +1,40 @@
+* {
+  --offWhite: #fcfcfc;
+  --blackSteak: rgb(41, 41, 41);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 4rem;
+  color: white;
+}
+
+h4 {
+  font-weight: 100;
+  color: white;
+  letter-spacing: 3px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info-container {
+  background-color: var(--offWhite);
+  color: var(--blackSteak);
+  margin: 1rem auto;
+  height: 35rem;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+}
+
+.info-title {
+  padding: 1rem;
+  border-bottom: 1px solid #86a8e7;
+  color: grey;
+}
+p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 2rem;
+}
