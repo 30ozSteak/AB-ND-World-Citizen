@@ -6,7 +6,7 @@ import Achievement from "./Achievement";
 import Menu from "./Menu";
 import trophyImage from "./Images/trophies/006-award-1.png";
 import Settings from "./Settings";
-import InfoButton from "./Information";
+import InfoButton from "./InfoButton";
 
 export default class Home extends Component {
   constructor() {
