@@ -20,6 +20,7 @@ export default class Info extends Component {
           <p className="info-title">About Us</p>
           <p>CTO</p>
           <p>Justine Troyke</p>
+          <p>Lead Butt</p>
           <p>Lead Developer</p>
           <p>Alex Bruce</p>
           <p>Lead Designer</p>
