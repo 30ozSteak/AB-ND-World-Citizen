@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { PageContent } from "./page-content";
 
 import App from "./App";
-import Icon from "./Icon";
+import Icon from "./icon";
 import LoginButton from "./LoginButton";
 import { NavLink } from "react-router-dom";
 import "./Login.css";

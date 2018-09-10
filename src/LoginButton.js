@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { PageContent } from "./page-content";
 
 import App from "./App";
-import Icon from "./Icon";
+import Icon from "./icon";
 import "./Login.css";
 
 export default class LoginButton extends Component {
