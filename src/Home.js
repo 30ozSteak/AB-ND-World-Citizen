@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
 import image from "./Images/me.jpg";
+import settingsImage from "./Images/settings.svg";
 import Achievement from "./Achievement";
 import Menu from "./Menu";
 import trophyImage from "./Images/trophies/006-award-1.png";
 import Settings from "./Settings";
+import Information from "./Information";
 
 export default class Home extends Component {
   constructor() {
@@ -22,7 +24,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Settings />
+        <div className="topMenu">
+          <Information />
+          <Settings />
+        </div>
         <img id="home-profile-picture" alt="the users profile" src={image} />
         <section id="home-info-container">
           <Achievement

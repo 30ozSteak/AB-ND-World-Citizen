@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import "./App.css";
 import { UsStates } from "./NearbyPeople";
 import Settings from "./Settings";
+import Information from "./Information";
 
 export default class Play extends Component {
   constructor() {
@@ -50,6 +51,7 @@ export default class Play extends Component {
     const states = UsStates;
     return (
       <div className="play-container">
+        <Information />
         <Settings />
         <form className="play-form">
           <div className="play-search-first-line">
