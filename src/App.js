@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
+import Menu from "./Menu";
 import { PageContent } from "./page-content";
 
 export default class App extends Component {
@@ -9,6 +10,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <PageContent />
+        <Menu />
       </div>
     );
   }

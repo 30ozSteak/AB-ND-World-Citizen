@@ -32,7 +32,6 @@ export default class Social extends Component {
             );
           })}
         </div>
-        <Menu />
       </div>
     );
   }

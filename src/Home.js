@@ -55,7 +55,6 @@ export default class Home extends Component {
             progress={this.state.globalProgress}
             trophyIcon={trophyImage}
           />
-          <Menu />
         </section>
       </div>
     );
