@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./icon.css";
 import infoImage from "./Images/info.svg";
 
-export default class Settings extends Component {
+export default class InfoButton extends Component {
   constructor(props) {
     super(props);
     this.state = {};

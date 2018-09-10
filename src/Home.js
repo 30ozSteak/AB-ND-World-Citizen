@@ -6,7 +6,7 @@ import Achievement from "./Achievement";
 import Menu from "./Menu";
 import trophyImage from "./Images/trophies/006-award-1.png";
 import Settings from "./Settings";
-import Information from "./Information";
+import InfoButton from "./Information";
 
 export default class Home extends Component {
   constructor() {
@@ -25,7 +25,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className="topMenu">
-          <Information />
+          <InfoButton />
           <Settings />
         </div>
         <img id="home-profile-picture" alt="the users profile" src={image} />
