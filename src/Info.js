@@ -1,8 +1,6 @@
 import "./App.css";
-import Notifications from "./Notifications.js";
 import InfoButton from "./InfoButton.js";
 import React, { Component } from "react";
-import Menu from "./Menu";
 import BrandName from "./BrandName";
 import "./Info.css";
 
