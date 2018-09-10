@@ -53,7 +53,7 @@ export default class Play extends Component {
       <div className="play-container">
         <InfoButton />
         <Settings />
-        <form className="play-form">
+        <form className={"play-form " + (this.state.expanded && "play-form-expanded")}>
           <div className="play-search-first-line">
             <input
               onFocus={this.expandSearch}
