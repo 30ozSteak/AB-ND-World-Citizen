@@ -4,6 +4,7 @@ import "./App.css";
 import { UsStates } from "./NearbyPeople";
 import Notifications from "./Notifications";
 import InfoButton from "./InfoButton.js";
+import NearbyCard from './NearbyCard';
 
 export default class Play extends Component {
   constructor() {
@@ -95,6 +96,13 @@ export default class Play extends Component {
             </div>
           )}
         </form>
+        <section className="nearbycard-container" >
+          <NearbyCard />
+          <NearbyCard />
+          <NearbyCard />
+          <NearbyCard />
+          <NearbyCard />
+        </section>
       </div>
     );
   }

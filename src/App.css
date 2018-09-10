@@ -314,3 +314,15 @@ body {
   text-align: end;
   vertical-align: middle;
 }
+
+.nearbycard-container {
+  width:100%;
+}
+
+/* NEARBYCARD */
+.nearbycard-card {
+  background-color: var(--offWhite);
+  border-radius: 8px;
+  margin: 1rem auto;
+  width: 95%;
+}
