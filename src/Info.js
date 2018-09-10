@@ -22,10 +22,12 @@ export default class Info extends Component {
         <BrandName />
         <h4>Give Back, Get Rewards, Have Fun</h4>
         <div className="info-container">
-          <p className="info-title">Information</p>
-          <p>Inspired by: World Citizen, Justine Troyke</p>
-          <p>Developed By</p>
+          <p className="info-title">About Us</p>
+          <p>Lead Engineer</p>
+          <p>Justine Troyke</p>
+          <p>Lead Developer</p>
           <p>Alex Bruce</p>
+          <p>Lead Designer</p>
           <p>Nick Dambrosio</p>
         </div>
       </div>
