@@ -14,8 +14,21 @@ export default class Play extends Component {
       expanded: false,
       address: "",
       city: "",
-      state: ""
+      state: "",
+      location: []
     };
+  }
+
+  getLocation = (address, city, state) => {
+    fetch(`https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`)
+      .then(response => response.json()
+      .then(data => {
+        this.setState({
+          location: data
+        })
+        console.log('IT WORKS!!')
+      }))
+      .catch(err => console.log(err))
   }
 
   expandSearch = () => {
@@ -25,6 +38,7 @@ export default class Play extends Component {
   };
 
   closeSearch = () => {
+    this.getLocation(this.state.address, this.state.city, this.state.state)
     this.setState({
       expanded: false
     });
@@ -34,18 +48,21 @@ export default class Play extends Component {
     this.setState({
       address: e.target.value
     });
+    // this.getLocation(e.target.value, this.state.city, this.state.state)
   };
 
   setCity = e => {
     this.setState({
       city: e.target.value
     });
+    // this.getLocation(this.state.address, e.target.value, this.state.state)
   };
 
   setTheState = e => {
     this.setState({
       state: e.target.value
     });
+    // this.getLocation(this.state.address, this.state.city, e.target.value)
   };
 
   render() {
@@ -97,11 +114,19 @@ export default class Play extends Component {
           )}
         </form>
         <section className="nearbycard-container" >
-          <NearbyCard />
-          <NearbyCard />
-          <NearbyCard />
-          <NearbyCard />
-          <NearbyCard />
+        {
+          this.state.location.map(place => {
+              return <NearbyCard 
+                name={place.item.business_name}
+                category={place.item.category_id}
+                product={place.item.name}
+                cause={place.item.organization}
+                location={place.item.business_location}
+                distance={place.distance}
+              />
+          })
+        }
+
         </section>
       </div>
     );
