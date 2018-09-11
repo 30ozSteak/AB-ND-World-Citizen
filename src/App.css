@@ -142,6 +142,8 @@ body {
   margin: 5px auto;
   padding-left: 1rem;
   text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 .achievement-slider {
@@ -162,6 +164,7 @@ body {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  height: 2rem;
 }
 
 .achievement-score {
@@ -169,21 +172,22 @@ body {
   font-size: 1rem;
   height: 1rem;
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 .achievement-slider-box {
-  background: linear-gradient(to bottom, #5694ee, #6ce9fc);
+  background: linear-gradient(to bottom, #4cc4f3, #6ce9fc);
   border-radius: 5px;
   position: relative;
   bottom: 45px;
+  height: 4.5rem;
   left: 75px;
-  box-shadow: 0px 4px 5px #5694ee;
+  box-shadow: 0px 3px 10px #5693eea6;
 }
 
 .achievement-slider-image {
   height: 3rem;
   width: 3.5rem;
-  position: relative;
   padding: 10px;
   position: relative;
 }
@@ -196,8 +200,8 @@ body {
   color: #5694ee;
   filter: invert(50%);
   height: 1rem;
-  margin-bottom: 5px;
-  width: 130%;
+  margin: 0 auto;
+  margin-left: 4.2rem;
 }
 
 .up-arrow {
@@ -212,7 +216,6 @@ body {
 }
 
 .achievement-expanded {
-  /* background-color: magenta; */
   margin-top: 3rem;
   padding: 5px;
 }
