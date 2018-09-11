@@ -154,7 +154,7 @@ body {
 }
 
 .achievement-slider-fill {
-  background-color: #3974d3;
+  background-color: #6595e4;
   color: var(--offWhite);
   height: 100%;
   width: 40%;
@@ -168,7 +168,7 @@ body {
 }
 
 .achievement-score {
-  color: #8b8b8b;
+  color: #aaaaaa;
   font-size: 1rem;
   height: 1rem;
   vertical-align: middle;
@@ -456,7 +456,7 @@ body {
 }
 
 .expanded-nearbycard {
-  background: linear-gradient(to bottom, #fcfcfc, #dedede, #dedede, #dedede);
+  background: linear-gradient(to bottom, #fcfcfc);
   border-radius: 0 0 8px 8px;
 }
 
@@ -554,5 +554,17 @@ body {
   100% {
     transform: scale(0.3);
     background-color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes 🦄 {
+  0% {
+    filter: hue-rotate(-90deg);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(-90deg);
   }
 }
