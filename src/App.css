@@ -462,3 +462,78 @@ body {
 .log-out:hover {
   filter: brightness(150%);
 }
+
+/* LOADING ANIMATION */
+#fountainG{
+	position: relative;
+  width: 84px;
+  top: 5rem;
+	height: 10px;
+	margin: auto;
+}
+
+.fountainG{
+	position: absolute;
+	top: 0;
+	background-color: rgb(255,255,255);
+	width: 10px;
+	height: 10px;
+	animation-name: bounce_fountainG;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	transform: scale(.3);
+	border-radius: 7px;
+}
+
+#fountainG_1{
+	left: 0;
+	animation-delay: 0.6s;
+}
+
+#fountainG_2{
+	left: 10px;
+	animation-delay: 0.75s;
+}
+
+#fountainG_3{
+	left:21px;
+	animation-delay: 0.9s;
+}
+
+#fountainG_4{
+	left:31px;
+	animation-delay:1.05s;
+}
+
+#fountainG_5{
+	left:42px;
+	animation-delay:1.2s;
+}
+
+#fountainG_6{
+	left:52px;
+	animation-delay:1.35s;
+}
+
+#fountainG_7{
+	left:63px;
+	animation-delay:1.5s;
+}
+
+#fountainG_8{
+	left:73px;
+	animation-delay:1.64s;
+}
+
+@keyframes bounce_fountainG{
+	0%{
+	transform:scale(1);
+		background-color:rgb(255,255,255);
+	}
+
+	100%{
+	transform:scale(.3);
+		background-color:rgb(255,255,255);
+	}
+}
