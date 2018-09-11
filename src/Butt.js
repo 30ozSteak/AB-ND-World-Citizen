@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./icon.css";
 import BrandName from "./BrandName";
 
-export default class Icon extends Component {
+class Butt extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -18,3 +18,5 @@ export default class Icon extends Component {
     );
   }
 }
+
+export default Butt;

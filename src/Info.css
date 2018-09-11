@@ -6,15 +6,21 @@
 h1 {
   font-size: 2rem;
   font-weight: 100;
-  margin-top: 4rem;
   color: white;
+  margin-top: 3rem;
+}
+
+.location {
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-size: 0.5rem;
 }
 
 h4 {
   font-weight: 100;
   color: white;
   letter-spacing: 3px;
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -31,10 +37,20 @@ h4 {
 .info-title {
   padding: 1rem;
   border-bottom: 1px solid #86a8e7;
-  color: grey;
+  color: var(--blackSteak);
+  margin-bottom: 1rem;
 }
+
 p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.job-title {
+  color: grey;
+  letter-spacing: 3px;
+  line-height: 2rem;
+  font-size: 0.5rem;
 }
