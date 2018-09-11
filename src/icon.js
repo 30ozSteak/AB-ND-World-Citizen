@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import "./icon.css";
-import BrandName from "./BrandName";
+// import React, { Component } from "react";
+// import "./icon.css";
+// import BrandName from "./BrandName";
 
-export default class Icon extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+// export default class Icon extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {};
+//   }
 
-  render(props) {
-    return (
-      <div className="icon">
-        <div className="spinning-globe" />
-        <BrandName />
-        <p>Swipe to Learn More</p>
-      </div>
-    );
-  }
-}
+//   render(props) {
+//     return (
+//       <div className="icon">
+//         <div className="spinning-globe" />
+//         <BrandName />
+//         <p>Swipe to Learn More</p>
+//       </div>
+//     );
+//   }
+// }
