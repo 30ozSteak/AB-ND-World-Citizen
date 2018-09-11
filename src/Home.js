@@ -7,7 +7,7 @@ import "./App.css";
 import trophyImage from "./Images/trophies/006-award-1.png";
 import globalCitizen from "./Images/newtrophies/astronaut.svg";
 import notificationImage from "./Images/notification.svg";
-import userImage from "./Images/woman.svg";
+import userImage from "./Images/teddy-bear.svg";
 
 export default class Home extends Component {
   constructor() {

@@ -100,10 +100,11 @@ body {
 }
 
 #userImage {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   border: 2px solid white;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 50%;
 }
 
