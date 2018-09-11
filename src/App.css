@@ -131,7 +131,7 @@ body {
   background-color: var(--offWhite);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
-  min-height: 10rem;
+  min-height: 7rem;
   margin: 1rem auto 0 auto;
   padding-top: 1rem;
   width: calc(100% - 2rem);
@@ -140,19 +140,19 @@ body {
 .achievement-header {
   color: var(--blackSteak);
   margin: 5px auto;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .achievement-slider {
   background-color: #dedede;
-  border-radius: 2px;
-  height: 10px;
-  margin: auto;
+  height: 15px;
+  margin: 1rem 0 1rem 1rem;
   width: 15rem;
 }
 
 .achievement-slider-fill {
   background-color: #3974d3;
-  border-radius: 0.5em;
   color: var(--offWhite);
   height: 100%;
   width: 40%;
@@ -168,17 +168,24 @@ body {
   color: #8b8b8b;
   font-size: 1rem;
   height: 1rem;
-
   vertical-align: middle;
+}
+
+.achievement-slider-box {
+  background: linear-gradient(to bottom, #5694ee, #6ce9fc);
+  border-radius: 5px;
+  position: relative;
+  bottom: 45px;
+  left: 75px;
+  box-shadow: 0px 4px 5px #5694ee;
 }
 
 .achievement-slider-image {
   height: 3rem;
-  background-color: rgba(75, 75, 75, 0.808);
-  padding: 5px;
+  width: 3.5rem;
   position: relative;
-  right: -60px;
-  bottom: 45px;
+  padding: 10px;
+  position: relative;
 }
 
 .down-arrow {
@@ -190,7 +197,7 @@ body {
   filter: invert(50%);
   height: 1rem;
   margin-bottom: 5px;
-  width: 100%;
+  width: 130%;
 }
 
 .up-arrow {
@@ -206,7 +213,7 @@ body {
 
 .achievement-expanded {
   /* background-color: magenta; */
-  margin-top: 7rem;
+  margin-top: 3rem;
   padding: 5px;
 }
 
@@ -403,7 +410,6 @@ body {
 
 .default-nearbycard {
   display: inline-flex;
-  /* background-color: green; */
   justify-content: space-between;
   margin: 1rem;
   width: calc(100% - 2rem);
