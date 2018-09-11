@@ -23,12 +23,13 @@ export default class Info extends Component {
             {" "}
             <MiniGlobe />
           </div>
-          <p class="job-title">Lead Engineer</p>
+          <p className="job-title">Lead Engineer</p>
           <p>Justine Troyke </p>
-          <p class="job-title">Lead Developer</p>
+          <p className="job-title">Lead Developer</p>
           <p>Alex Bruce</p>
-          <p class="job-title">Lead Designer</p>
+          <p className="job-title">Lead Designer</p>
           <p>Nick Dambrosio</p>
+          <p className="log-out">Log out</p>
         </div>
       </div>
     );

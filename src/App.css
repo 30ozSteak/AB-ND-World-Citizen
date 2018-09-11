@@ -331,3 +331,8 @@ body {
   margin: 1rem auto;
   width: 95%;
 }
+
+.log-out {
+  margin-top: 15px;
+  font-size: 10px;
+}
