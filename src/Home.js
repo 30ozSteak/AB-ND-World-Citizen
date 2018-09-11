@@ -26,7 +26,7 @@ export default class Home extends Component {
       <div>
         <div className="topMenu">
           <h1>Victoria Skillane</h1>
-          <h1 className="location">Dvr, co</h1>
+          <h1 className="location">Denver, co</h1>
         </div>
         <img id="userImage" alt="the users photo" src={userImage} />
         <section id="home-info-container">
