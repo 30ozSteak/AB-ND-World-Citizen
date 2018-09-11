@@ -3,10 +3,21 @@
   --blackSteak: rgb(41, 41, 41);
 }
 
+.topMenu {
+  margin-top: 5rem;
+}
+
+.location {
+  letter-spacing: -2px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 100;
-  margin-top: 4rem;
   color: white;
 }
 
@@ -31,10 +42,20 @@ h4 {
 .info-title {
   padding: 1rem;
   border-bottom: 1px solid #86a8e7;
-  color: grey;
+  color: var(--blackSteak);
+  margin-bottom: 1rem;
 }
+
 p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.job-title {
+  color: grey;
+  letter-spacing: 3px;
+  line-height: 2rem;
+  font-size: 0.5rem;
 }
