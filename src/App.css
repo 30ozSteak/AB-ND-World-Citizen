@@ -116,10 +116,6 @@ body {
   left: 0.75em;
 }
 
-#home-info-container {
-  /* padding: 3rem 0 5rem 0; */
-}
-
 /* ACHIEVEMENT COMPONENT */
 .achievement-container {
   background-color: var(--offWhite);
@@ -343,8 +339,7 @@ body {
 
 .nearbycard-container {
   padding: 1rem 0 5rem 0;
-  width:100%;
-
+  width: 100%;
 }
 
 /* NEARBYCARD */
