@@ -117,7 +117,7 @@ body {
 }
 
 #home-info-container {
-  /* padding: 3rem 0 5rem 0; */
+  padding-bottom: 5rem;
 }
 
 /* ACHIEVEMENT COMPONENT */
@@ -125,7 +125,7 @@ body {
   background-color: var(--offWhite);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
-  min-height: 12rem;
+  min-height: 10rem;
   margin: 1rem auto 0 auto;
   padding-top: 1rem;
   width: calc(100% - 2rem);
@@ -155,19 +155,55 @@ body {
 .achievement-data-container {
   display: inline-flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .achievement-score {
   color: #7f7fd5;
   font-size: 2rem;
-  height: 5rem;
-  margin-top: 3rem;
+  height: 1rem;
+  margin-top: 1rem;
   vertical-align: middle;
 }
 
 .achievement-slider-image {
   height: 5rem;
-  margin: 1rem;
+  margin: 5px 5px 5px 5px;
+}
+
+.down-arrow {
+  background-image: url("./Images/down-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #5694ee;
+  filter: invert(50%);
+  height: 1rem;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.up-arrow {
+  transform: scaleY(-1);
+}
+
+.achievement-divider {
+  background-color: #3974d3;
+  height: 1px;
+  margin: auto;
+  width: 95%;
+}
+
+.achievement-expanded {
+  /* background-color: magenta; */
+  margin-top: 7rem;
+  padding: 5px;
+}
+
+.achievement-expanded-message {
+  color: var(--blackSteak);
+  letter-spacing: 0;
+  font-size: 14px;
 }
 
 /* MENU */
@@ -185,7 +221,7 @@ body {
   background-color: var(--offWhite);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
-  min-height: 8rem;
+  min-height: 9rem;
   margin: 1rem auto;
   padding-top: 1rem;
   width: calc(100% - 2rem);
@@ -351,6 +387,7 @@ body {
 .nearbycard-card {
   background-color: var(--offWhite);
   border-radius: 8px;
+  min-height: 7.5rem;
   margin: 10px auto;
   width: 95%;
 }

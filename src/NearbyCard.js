@@ -36,6 +36,7 @@ export default class NearbyCard extends Component {
             this.returnCategory(this.props.category)}
           </p>
         </div>
+          <div className={"down-arrow " + (this.state.expanded && "up-arrow")}></div>
         {
           this.state.expanded &&
           <div className="expanded-nearbycard">
