@@ -9,7 +9,7 @@ import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
-// import Icon from "./Icon.jds";
+import Icon from "./Icon";
 
 export default class SlickSlider extends Component {
   render() {
@@ -22,7 +22,9 @@ export default class SlickSlider extends Component {
     return (
       <div className="container">
         <Slider {...settings}>
-          <div>{/* <Icon /> */}</div>
+          <div>
+            <Icon />
+          </div>
           <div>
             <Step1 />
           </div>
