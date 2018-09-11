@@ -22,6 +22,7 @@ export default class Nearby extends Component {
           <h3 className="nearby-person-name" >{this.props.name}</h3>
         </div>
         <h4 className="nearby-distance" > {this.props.distance} </h4>
+        <div className={"down-arrow " + (this.state.expanded && "up-arrow")}></div>
         {
           this.state.expanded &&
           <div>
