@@ -11,6 +11,7 @@ export default class Play extends Component {
     super();
 
     this.state = {
+      fetchSent: false,
       expanded: false,
       address: "",
       city: "",
@@ -20,13 +21,15 @@ export default class Play extends Component {
   }
 
   getLocation = (address, city, state) => {
+    this.setState({
+      fetchSent: true
+    });
     fetch(`https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`)
       .then(response => response.json()
       .then(data => {
         this.setState({
           location: data
         })
-        console.log('IT WORKS!!')
       }))
       .catch(err => console.log(err))
   }
@@ -113,6 +116,20 @@ export default class Play extends Component {
             </div>
           )}
         </form>
+        {
+          !this.state.location.length && 
+          this.state.fetchSent &&
+          <div id="fountainG">
+            <div id="fountainG_1" className="fountainG"></div>
+            <div id="fountainG_2" className="fountainG"></div>
+            <div id="fountainG_3" className="fountainG"></div>
+            <div id="fountainG_4" className="fountainG"></div>
+            <div id="fountainG_5" className="fountainG"></div>
+            <div id="fountainG_6" className="fountainG"></div>
+            <div id="fountainG_7" className="fountainG"></div>
+            <div id="fountainG_8" className="fountainG"></div>
+          </div>
+        }
         <section className="nearbycard-container" >
         {
           this.state.location.map(place => {
