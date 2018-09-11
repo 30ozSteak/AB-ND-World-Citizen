@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import BrandName from "./BrandName";
 import "./Info.css";
 import MiniGlobe from "./Miniglobe";
+import { NavLink } from "react-router-dom";
 
 export default class Info extends Component {
   constructor() {
@@ -29,7 +30,9 @@ export default class Info extends Component {
           <p>Alex Bruce</p>
           <p className="job-title">Lead Designer</p>
           <p>Nick Dambrosio</p>
-          <p className="log-out">Log out</p>
+          <NavLink to="/">
+            <p className="log-out">Log out</p>
+          </NavLink>
         </div>
       </div>
     );

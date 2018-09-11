@@ -335,4 +335,10 @@ body {
 .log-out {
   margin-top: 15px;
   font-size: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.log-out:hover {
+  filter: brightness(150%);
 }
