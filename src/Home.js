@@ -3,7 +3,10 @@ import React, { Component } from "react";
 import image from "./Images/me.jpg";
 import Achievement from "./Achievement";
 import Menu from "./Menu";
+import "./App.css";
 import trophyImage from "./Images/trophies/006-award-1.png";
+import notificationImage from "./Images/notification.svg";
+import userImage from "./Images/woman.svg";
 
 export default class Home extends Component {
   constructor() {
@@ -21,8 +24,11 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="topMenu" />
-        <img id="home-profile-picture" alt="the users profile" src={image} />
+        <div className="topMenu">
+          <h1>Victoria Skillane</h1>
+          <h1 className="location">Denver</h1>
+        </div>
+        <img id="userImage" alt="the users photo" src={userImage} />
         <section id="home-info-container">
           <Achievement
             stamp={"Local Citizenship"}

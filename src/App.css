@@ -61,23 +61,20 @@ body {
   /* whaaaaaaaat the helllllllll is saturate 7000% lol */
 }
 
-/* HOME COMPONENT */
-#home-profile-picture {
-  background-color: grey;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px rgba(34, 34, 34, 0.616);
-  height: 10em;
-  position: relative;
-  top: 5rem;
-  width: 10em;
-}
-
 #notifications-icon,
 #info-settings-icon {
   height: 1.75em;
   position: absolute;
   right: 0.75em;
   top: 0.75em;
+}
+
+#userImage {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid white;
+  padding: 1.5rem;
+  border-radius: 50%;
 }
 
 #info-earth-icon {
@@ -96,7 +93,7 @@ body {
 }
 
 #home-info-container {
-  padding: 3rem 0 5rem 0;
+  /* padding: 3rem 0 5rem 0; */
 }
 
 /* ACHIEVEMENT COMPONENT */
