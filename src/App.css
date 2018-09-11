@@ -80,6 +80,11 @@ body {
   top: 0.75em;
 }
 
+#info-earth-icon {
+  height: 100px;
+  width: 100px;
+}
+
 #notifications-icon:hover,
 #info-settings-icon:hover {
   cursor: pointer;
@@ -316,7 +321,7 @@ body {
 }
 
 .nearbycard-container {
-  width:100%;
+  width: 100%;
 }
 
 /* NEARBYCARD */

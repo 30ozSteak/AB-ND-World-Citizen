@@ -35,9 +35,6 @@ h4 {
   margin-bottom: 1rem;
 }
 
-.info-div {
-}
-
 p {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -47,4 +44,6 @@ p {
 
 .job-title {
   color: grey;
+  letter-spacing: 5px;
+  font-size: 0.5rem;
 }
