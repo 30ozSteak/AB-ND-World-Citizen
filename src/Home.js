@@ -5,6 +5,7 @@ import Achievement from "./Achievement";
 import Menu from "./Menu";
 import "./App.css";
 import trophyImage from "./Images/trophies/006-award-1.png";
+import globalCitizen from "./Images/newtrophies/astronaut.svg";
 import notificationImage from "./Images/notification.svg";
 import userImage from "./Images/woman.svg";
 
@@ -25,15 +26,16 @@ export default class Home extends Component {
     return (
       <div>
         <div className="topMenu">
+          <h4 className="profile">Profile</h4>
           <h1>Victoria Skillane</h1>
-          <h1 className="location">Denver, co</h1>
+          <h1 className="location">Denver, Co</h1>
         </div>
         <img id="userImage" alt="the users photo" src={userImage} />
         <section id="home-info-container">
           <Achievement
             stamp={"Local Citizenship"}
             progress={this.state.localProgress}
-            trophyIcon={trophyImage}
+            trophyIcon={globalCitizen}
           />
           <Achievement
             stamp={"District Citizenship"}

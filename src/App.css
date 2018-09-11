@@ -40,6 +40,12 @@ body {
   width: 33vw;
 }
 
+.profile {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+}
+
 .menu-button-icon {
   filter: invert(40%) sepia() saturate(100%) hue-rotate(200deg);
 }
@@ -159,16 +165,20 @@ body {
 }
 
 .achievement-score {
-  color: #7f7fd5;
-  font-size: 2rem;
+  color: #8b8b8b;
+  font-size: 1rem;
   height: 1rem;
-  margin-top: 1rem;
+
   vertical-align: middle;
 }
 
 .achievement-slider-image {
-  height: 5rem;
-  margin: 5px 5px 5px 5px;
+  height: 3rem;
+  background-color: rgba(75, 75, 75, 0.808);
+  padding: 5px;
+  position: relative;
+  right: -60px;
+  bottom: 45px;
 }
 
 .down-arrow {
@@ -464,76 +474,76 @@ body {
 }
 
 /* LOADING ANIMATION */
-#fountainG{
-	position: relative;
+#fountainG {
+  position: relative;
   width: 84px;
   top: 5rem;
-	height: 10px;
-	margin: auto;
+  height: 10px;
+  margin: auto;
 }
 
-.fountainG{
-	position: absolute;
-	top: 0;
-	background-color: rgb(255,255,255);
-	width: 10px;
-	height: 10px;
-	animation-name: bounce_fountainG;
-	animation-duration: 1.5s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	transform: scale(.3);
-	border-radius: 7px;
+.fountainG {
+  position: absolute;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 10px;
+  animation-name: bounce_fountainG;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  transform: scale(0.3);
+  border-radius: 7px;
 }
 
-#fountainG_1{
-	left: 0;
-	animation-delay: 0.6s;
+#fountainG_1 {
+  left: 0;
+  animation-delay: 0.6s;
 }
 
-#fountainG_2{
-	left: 10px;
-	animation-delay: 0.75s;
+#fountainG_2 {
+  left: 10px;
+  animation-delay: 0.75s;
 }
 
-#fountainG_3{
-	left:21px;
-	animation-delay: 0.9s;
+#fountainG_3 {
+  left: 21px;
+  animation-delay: 0.9s;
 }
 
-#fountainG_4{
-	left:31px;
-	animation-delay:1.05s;
+#fountainG_4 {
+  left: 31px;
+  animation-delay: 1.05s;
 }
 
-#fountainG_5{
-	left:42px;
-	animation-delay:1.2s;
+#fountainG_5 {
+  left: 42px;
+  animation-delay: 1.2s;
 }
 
-#fountainG_6{
-	left:52px;
-	animation-delay:1.35s;
+#fountainG_6 {
+  left: 52px;
+  animation-delay: 1.35s;
 }
 
-#fountainG_7{
-	left:63px;
-	animation-delay:1.5s;
+#fountainG_7 {
+  left: 63px;
+  animation-delay: 1.5s;
 }
 
-#fountainG_8{
-	left:73px;
-	animation-delay:1.64s;
+#fountainG_8 {
+  left: 73px;
+  animation-delay: 1.64s;
 }
 
-@keyframes bounce_fountainG{
-	0%{
-	transform:scale(1);
-		background-color:rgb(255,255,255);
-	}
+@keyframes bounce_fountainG {
+  0% {
+    transform: scale(1);
+    background-color: rgb(255, 255, 255);
+  }
 
-	100%{
-	transform:scale(.3);
-		background-color:rgb(255,255,255);
-	}
+  100% {
+    transform: scale(0.3);
+    background-color: rgb(255, 255, 255);
+  }
 }
