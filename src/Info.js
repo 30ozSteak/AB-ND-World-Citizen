@@ -17,7 +17,6 @@ export default class Info extends Component {
     return (
       <div className="grid">
         <BrandName />
-        <h4>Give Back, Get Rewards, Have Fun</h4>
         <div className="info-container">
           <p className="info-title">About Us</p>
           <div className="info-globe">

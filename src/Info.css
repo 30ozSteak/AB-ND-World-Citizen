@@ -3,29 +3,24 @@
   --blackSteak: rgb(41, 41, 41);
 }
 
-.topMenu {
-  margin-top: 5rem;
-}
-
-.location {
-  letter-spacing: -2px;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 h1 {
   font-size: 2rem;
   font-weight: 100;
   color: white;
+  margin-top: 3rem;
+}
+
+.location {
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-size: 0.5rem;
 }
 
 h4 {
   font-weight: 100;
   color: white;
   letter-spacing: 3px;
-  width: 70%;
   margin: 0 auto;
 }
 
