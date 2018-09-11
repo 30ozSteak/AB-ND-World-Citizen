@@ -18,12 +18,12 @@ export default class Info extends Component {
         <h4>Give Back, Get Rewards, Have Fun</h4>
         <div className="info-container">
           <p className="info-title">About Us</p>
-          <p>CTO</p>
-          <p>Justine Troyke</p>
-          <p>Lead Butt</p>
-          <p>Lead Developer</p>
+          <div className="info-globe" />
+          <p class="job-title">Lead Engineer</p>
+          <p>Justine Troyke </p>
+          <p class="job-title">Lead Developer</p>
           <p>Alex Bruce</p>
-          <p>Lead Designer</p>
+          <p class="job-title">Lead Designer</p>
           <p>Nick Dambrosio</p>
         </div>
       </div>

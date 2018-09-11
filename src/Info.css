@@ -31,10 +31,20 @@ h4 {
 .info-title {
   padding: 1rem;
   border-bottom: 1px solid #86a8e7;
-  color: grey;
+  color: var(--blackSteak);
+  margin-bottom: 1rem;
 }
+
+.info-div {
+}
+
 p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.job-title {
+  color: grey;
 }
