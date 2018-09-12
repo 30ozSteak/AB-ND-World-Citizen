@@ -18,11 +18,11 @@ export default class Home extends Component {
     super();
 
     this.state = {
-      localProgress: 8,
-      districtProgress: 8,
-      regionalProgress: 8,
-      nationalProgress: 8,
-      globalProgress: 8
+      // localProgress: 0,
+      // districtProgress: 0,
+      // regionalProgress: 0,
+      // nationalProgress: 0,
+      // globalProgress: 0
     };
   }
 
@@ -38,31 +38,31 @@ export default class Home extends Component {
         <section id="home-info-container">
           <Achievement
             stamp={"Local Citizenship"}
-            progress={this.state.localProgress}
+            // progress={this.state.localProgress}
             trophyIcon={localCitizen}
             style="var(--blueGreen)"
           />
           <Achievement
             stamp={"District Citizenship"}
-            progress={this.state.districtProgress}
+            // progress={this.state.districtProgress}
             trophyIcon={districtCitizen}
             style="var(--peachy)"
           />
           <Achievement
             stamp={"Regional Citizenship"}
-            progress={this.state.regionalProgress}
+            // progress={this.state.regionalProgress}
             trophyIcon={regionalCitizen}
             style="var(--decent)"
             />
           <Achievement
             stamp={"National Citizenship"}
-            progress={this.state.nationalProgress}
+            // progress={this.state.nationalProgress}
             trophyIcon={nationalCitizen}
             style="var(--tranquil)"
             />
           <Achievement
             stamp={"Global Citizenship"}
-            progress={this.state.globalProgress}
+            // progress={this.state.globalProgress}
             trophyIcon={globalCitizen}
             style="var(--pinkish)"
           />
