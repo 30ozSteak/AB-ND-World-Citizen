@@ -18,11 +18,11 @@ export default class Home extends Component {
     super();
 
     this.state = {
-      localProgress: 20,
+      localProgress: 8,
       districtProgress: 8,
-      regionalProgress: 0,
-      nationalProgress: 2,
-      globalProgress: 1
+      regionalProgress: 8,
+      nationalProgress: 8,
+      globalProgress: 8
     };
   }
 
@@ -30,7 +30,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className="topMenu">
-          <h4 className="profile">Profile</h4>
+          <h4>Profile</h4>
           <h1>Victoria Skillane</h1>
           <h1 className="location">Denver, Co</h1>
         </div>

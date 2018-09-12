@@ -20,18 +20,43 @@ h1 {
 h4 {
   font-weight: 100;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 0.5rem;
   margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .info-container {
   background-color: var(--offWhite);
   color: var(--blackSteak);
   margin: 1rem auto;
-  height: 35rem;
+  height: 36rem;
   width: 80%;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  overflow: scroll;
+}
+
+.app-description {
+  padding: 2rem;
+  font-size: 0.5rem;
+  color: grey;
+  letter-spacing: 2px;
+}
+
+.fa-caret-down {
+  margin: 2rem;
+  color: grey;
+}
+
+.fab {
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: var(--blackSteak);
+}
+
+.fab:hover {
+  color: grey;
 }
 
 .info-title {

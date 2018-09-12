@@ -23,12 +23,25 @@ export default class Info extends Component {
             {" "}
             <MiniGlobe />
           </div>
-          <p className="job-title">Lead Engineer</p>
+          <p className="job-title">CTO</p>
           <p>Justine Troyke </p>
           <p className="job-title">Lead Developer</p>
           <p>Alex Bruce</p>
           <p className="job-title">Lead Designer</p>
           <p>Nick Dambrosio</p>
+          <i class="fas fa-caret-down" />
+          <p className="app-description">
+            This app was inspired and directed by Justine Troyke. Visit her
+            Github / Linkedin!
+          </p>
+          <a href="https://github.com/justinetroyke">
+            <i class="fab fa-github" />
+          </a>
+          <a href="https://www.linkedin.com/in/justine-troyke/">
+            <i class="fab fa-linkedin" />
+          </a>
+          <p />
+
           <NavLink to="/">
             <p className="log-out">Back</p>
           </NavLink>
