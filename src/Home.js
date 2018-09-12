@@ -40,26 +40,31 @@ export default class Home extends Component {
             stamp={"Local Citizenship"}
             progress={this.state.localProgress}
             trophyIcon={localCitizen}
+            style="var(--blueGreen)"
           />
           <Achievement
             stamp={"District Citizenship"}
             progress={this.state.districtProgress}
             trophyIcon={districtCitizen}
+            style="var(--peachy)"
           />
           <Achievement
             stamp={"Regional Citizenship"}
             progress={this.state.regionalProgress}
             trophyIcon={regionalCitizen}
-          />
+            style="var(--decent)"
+            />
           <Achievement
             stamp={"National Citizenship"}
             progress={this.state.nationalProgress}
             trophyIcon={nationalCitizen}
-          />
+            style="var(--tranquil)"
+            />
           <Achievement
             stamp={"Global Citizenship"}
             progress={this.state.globalProgress}
             trophyIcon={globalCitizen}
+            style="var(--pinkish)"
           />
         </section>
       </div>
