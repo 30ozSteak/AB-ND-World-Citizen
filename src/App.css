@@ -151,7 +151,7 @@ body {
   background-color: #dedede;
   height: 15px;
   margin: 1rem 0 1rem 1rem;
-  width: 15rem;
+  width: 90%;
 }
 
 .achievement-slider-fill {
@@ -182,8 +182,13 @@ body {
   position: relative;
   bottom: 45px;
   height: 4.5rem;
-  left: 75px;
+  left: 25px;
   box-shadow: 0px 3px 10px #5693eea6;
+}
+
+.achievement-slider-box:hover {
+  filter: brightness(105%);
+  cursor: pointer;
 }
 
 .achievement-slider-image {
@@ -201,8 +206,7 @@ body {
   color: #5694ee;
   filter: invert(50%);
   height: 1rem;
-  margin: 0 auto;
-  margin-left: 4.2rem;
+  width: 100%;
 }
 
 .up-arrow {

@@ -23,8 +23,7 @@ export default class Achievement extends Component {
           <div className="achievement-slider-fill" />
           <div className="achievement-data-container">
             <span className="achievement-score">
-              {this.props.progress}
-              -20
+              {this.props.progress} / 20
             </span>
             <div className="achievement-slider-box">
               <img

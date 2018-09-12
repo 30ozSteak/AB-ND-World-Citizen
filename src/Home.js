@@ -5,16 +5,20 @@ import Achievement from "./Achievement";
 import Menu from "./Menu";
 import "./App.css";
 import trophyImage from "./Images/trophies/006-award-1.png";
-import globalCitizen from "./Images/newtrophies/astronaut.svg";
+import globalCitizen from "./Images/global.svg";
 import notificationImage from "./Images/notification.svg";
 import userImage from "./Images/teddy-bear.svg";
+import localCitizen from "./Images/local.svg";
+import districtCitizen from "./Images/district.svg";
+import nationalCitizen from "./Images/national.svg";
+import regionalCitizen from "./Images/regional.svg";
 
 export default class Home extends Component {
   constructor() {
     super();
 
     this.state = {
-      localProgress: 5,
+      localProgress: 20,
       districtProgress: 8,
       regionalProgress: 0,
       nationalProgress: 2,
@@ -35,27 +39,27 @@ export default class Home extends Component {
           <Achievement
             stamp={"Local Citizenship"}
             progress={this.state.localProgress}
-            trophyIcon={globalCitizen}
+            trophyIcon={localCitizen}
           />
           <Achievement
             stamp={"District Citizenship"}
             progress={this.state.districtProgress}
-            trophyIcon={trophyImage}
+            trophyIcon={districtCitizen}
           />
           <Achievement
             stamp={"Regional Citizenship"}
             progress={this.state.regionalProgress}
-            trophyIcon={trophyImage}
+            trophyIcon={regionalCitizen}
           />
           <Achievement
             stamp={"National Citizenship"}
             progress={this.state.nationalProgress}
-            trophyIcon={trophyImage}
+            trophyIcon={nationalCitizen}
           />
           <Achievement
             stamp={"Global Citizenship"}
             progress={this.state.globalProgress}
-            trophyIcon={trophyImage}
+            trophyIcon={globalCitizen}
           />
         </section>
       </div>
