@@ -207,8 +207,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  color: #5694ee;
-  filter: invert(50%);
+  filter: invert(80%);
   height: 1rem;
   width: 100%;
 }
@@ -250,9 +249,9 @@ body {
   background-color: var(--offWhite);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
-  min-height: 9rem;
+  min-height: 2rem;
   margin: 1rem auto;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   width: calc(100% - 2rem);
 }
 
@@ -261,7 +260,6 @@ body {
   box-shadow: 0 1px 7px rgba(34, 34, 34, 0.39);
   height: 4rem;
   width: 4rem;
-  overflow: hidden;
 }
 
 .nearby-person-name {
@@ -269,15 +267,19 @@ body {
   display: inline-block;
   margin: 1rem;
   text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
   width: 60%;
   vertical-align: top;
 }
 
 .nearby-distance {
-  color: var(--blackSteak);
-  margin: 1rem auto;
+  color: grey;
+  font-size: 0.8;
+  margin-top: -3.1rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 0;
-  text-align: left;
+  text-align: right;
   width: 80%;
 }
 
