@@ -63,8 +63,7 @@ body {
 #home-button:hover,
 #nearby-button:hover,
 #search-button:hover {
-  filter: invert(70%) sepia() saturate(7000%) hue-rotate(190deg);
-  /* whaaaaaaaat the helllllllll is saturate 7000% lol */
+  filter: invert(30%);
 }
 
 #notifications-icon,
@@ -87,6 +86,11 @@ body {
   animation: ❤️ 1s linear infinite;
 }
 
+.emoji-divider {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
 @keyframes ❤️ {
   0% {
     box-shadow: 0 0 0 0 rgb(158, 158, 158);
@@ -102,10 +106,10 @@ body {
 #userImage {
   width: 5rem;
   height: 5rem;
-  border: 2px solid white;
+  border: 2px solid var(--offWhite);
   padding: 1rem;
   margin: 1rem;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 #info-earth-icon {
@@ -203,8 +207,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  color: #5694ee;
-  filter: invert(50%);
+  filter: invert(80%);
   height: 1rem;
   width: 100%;
 }
@@ -238,7 +241,7 @@ body {
 
 /* NEARBY */
 .nearby-container {
-  padding: 5rem 0 5rem 0;
+  padding: 2rem 0 2rem 0;
   width: 100%;
 }
 
@@ -246,9 +249,9 @@ body {
   background-color: var(--offWhite);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
-  min-height: 9rem;
+  min-height: 2rem;
   margin: 1rem auto;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   width: calc(100% - 2rem);
 }
 
@@ -257,7 +260,6 @@ body {
   box-shadow: 0 1px 7px rgba(34, 34, 34, 0.39);
   height: 4rem;
   width: 4rem;
-  overflow: hidden;
 }
 
 .nearby-person-name {
@@ -265,16 +267,20 @@ body {
   display: inline-block;
   margin: 1rem;
   text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
   width: 60%;
   vertical-align: top;
 }
 
 .nearby-distance {
-  color: var(--blackSteak);
-  margin: 1rem auto;
+  color: grey;
+  font-size: 1.1rem;
+  margin-top: -3.3rem;
+  margin-bottom: 1.3rem;
   letter-spacing: 0;
-  text-align: left;
-  width: 80%;
+  text-align: right;
+  width: 90%;
 }
 
 .nearby-achievements-header {
@@ -313,6 +319,7 @@ body {
   height: 2.5rem;
   margin: 4rem auto;
   width: 80%;
+  font-weight: 100;
 }
 
 .play-form-expanded {
@@ -433,6 +440,7 @@ body {
   color: #3974d3;
   text-align: left;
   width: 75%;
+  font-weight: 100;
 }
 
 .nearbycard-distance {
@@ -447,17 +455,22 @@ body {
   display: inline-flex;
   margin: auto;
   width: calc(100% - 2rem);
+  font-weight: 100;
 }
 
 .nearbycard-category {
   padding: 0 5px;
   width: 1rem;
+  font-weight: 100;
 }
 
 .nearbycard-item {
   color: var(--blackSteak);
   padding: 5px 0 5px 0;
   text-align: left;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 .expanded-nearbycard {
@@ -477,7 +490,7 @@ body {
 }
 
 .log-out {
-  margin-top: 15px;
+  margin-top: 0;
   font-size: 10px;
   color: gray;
   cursor: pointer;
@@ -485,6 +498,12 @@ body {
 
 .log-out:hover {
   filter: brightness(150%);
+}
+
+.play-description {
+  font-size: 1rem;
+  padding: 2rem 2rem 0 2rem;
+  color: var(--offWhite);
 }
 
 /* LOADING ANIMATION */
@@ -572,4 +591,31 @@ body {
   100% {
     filter: hue-rotate(-90deg);
   }
+}
+
+#check {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .notification-popup {
+  display: block;
+}
+
+.notification-popup {
+  display: none;
+  width: 90%;
+  margin: -40rem auto 0 auto;
+  position: absolute;
+}
+
+.notification-popup span {
+  color: grey;
+}
+
+.notification-popup h4 {
+  color: var(--offWhite);
+  background-color: var(--blackSteak);
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 3;
 }

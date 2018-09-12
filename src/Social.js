@@ -16,6 +16,8 @@ export default class Social extends Component {
     const people = NearbyPeople;
     return (
       <div>
+        <h4>Nearby</h4>
+        <h1>Denver, Co</h1>
         <div className="nearby-container">
           {people.map(person => {
             return (

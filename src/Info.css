@@ -18,24 +18,26 @@ h1 {
 }
 
 h4 {
+  margin-top: 2rem;
   font-weight: 100;
   color: white;
-  letter-spacing: 3px;
-  margin: 0 auto;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .info-container {
   background-color: var(--offWhite);
   color: var(--blackSteak);
-  margin: 1rem auto;
+  margin: 3rem auto;
   height: 35rem;
   width: 80%;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  overflow: scroll;
 }
 
 .info-title {
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom: 1px solid #86a8e7;
   color: var(--blackSteak);
   margin-bottom: 1rem;
@@ -53,4 +55,22 @@ p {
   letter-spacing: 3px;
   line-height: 2rem;
   font-size: 0.5rem;
+}
+
+.app-description {
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+.info-container a {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  color: grey;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.info-container a:hover {
+  color: rgb(101, 101, 255);
 }
