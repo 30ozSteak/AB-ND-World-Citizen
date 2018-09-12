@@ -6,7 +6,8 @@ export default class Achievement extends Component {
     super();
 
     this.state = {
-      expanded: false
+      expanded: false,
+      count: 0
     };
   }
 
@@ -16,21 +17,26 @@ export default class Achievement extends Component {
     });
   };
 
-  // returnBackground = () => {
-  //   return `background: ${prop}`
-  // }
+  increaseCount = () => {
+    this.state.count < 20 &&
+    this.setState({
+      count: this.state.count += 1
+    })
+  }
 
   render() {
     return (
-      <div className="achievement-container" onClick={this.expandCard} >
-        <h3 className="achievement-header">{this.props.stamp}</h3>
+      <div className="achievement-container" >
+        <h3 className="achievement-header" onClick={this.expandCard} >{this.props.stamp}</h3>
         <div className="achievement-slider">
-          <div className="achievement-slider-fill" />
-          <div className="achievement-data-container">
+          <div className="achievement-slider-fill" style={{ width: this.state.count * 5 + "%"}} />
+          <div className="achievement-data-container"  >
             <span className="achievement-score">
-              {this.props.progress} / 20
+              {this.state.count} / 20
             </span>
-            <div className="achievement-slider-box" style={{ background: this.props.style }}>
+            <div className={"achievement-slider-box " + (this.state.count < 20 && "grayscale-box") }
+              style={{ background: this.props.style }}               
+              onClick={this.increaseCount} >
               <img
                 className="achievement-slider-image"
                 src={this.props.trophyIcon}
@@ -42,10 +48,10 @@ export default class Achievement extends Component {
           />
         </div>
         {this.state.expanded && (
-          <div className="achievement-expanded">
+          <div className="achievement-expanded" onClick={this.expandCard} >
             <div className="achievement-divider" />
             <p className="achievement-expanded-message">
-              You have earned <strong>{this.props.progress}</strong> points
+              You have earned <strong>{this.state.count}</strong> points
               towards your {this.props.stamp}
             </p>
           </div>
