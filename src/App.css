@@ -585,3 +585,27 @@ body {
     filter: hue-rotate(-90deg);
   }
 }
+
+#check {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .notification-popup {
+  display: none;
+}
+
+.notification-popup span {
+  color: grey;
+}
+
+.notification-popup h4 {
+  color: var(--offWhite);
+  background-color: var(--blackSteak);
+  padding: 1rem;
+  width: 80%;
+  border-radius: 5px;
+  top: 10px;
+  left: 20px;
+  z-index: 3;
+  position: absolute;
+}
