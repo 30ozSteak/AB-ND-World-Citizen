@@ -25,7 +25,8 @@ export default class Play extends Component {
       fetchSent: true
     });
     fetch(
-      `https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`
+      
+      `https://cors-anywhere.herokuapp.com/https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`
     )
       .then(response =>
         response.json().then(data => {
