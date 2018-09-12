@@ -23,7 +23,7 @@ export default class Info extends Component {
             {" "}
             <MiniGlobe />
           </div>
-          <p className="job-title">CTO</p>
+          <p className="job-title">Lead Engineer</p>
           <p>Justine Troyke </p>
           <a href="https://github.com/justinetroyke">Github</a>
           <a href="https://www.linkedin.com/in/justine-troyke/">LinkedIn</a>
@@ -38,7 +38,7 @@ export default class Info extends Component {
           <p className="app-description">
             This app was inspired and directed by Justine Troyke, a dedicated
             software engineer who aspires to encourage others towards the simple
-            idea of: Do What You Can, When You Can
+            idea of Doing what you can, when you can.
           </p>
           <a href="https://www.linkedin.com/in/alex-b-bruce/" />
           <NavLink to="/">

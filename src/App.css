@@ -319,6 +319,7 @@ body {
   height: 2.5rem;
   margin: 4rem auto;
   width: 80%;
+  font-weight: 100;
 }
 
 .play-form-expanded {
@@ -439,6 +440,7 @@ body {
   color: #3974d3;
   text-align: left;
   width: 75%;
+  font-weight: 100;
 }
 
 .nearbycard-distance {
@@ -453,17 +455,22 @@ body {
   display: inline-flex;
   margin: auto;
   width: calc(100% - 2rem);
+  font-weight: 100;
 }
 
 .nearbycard-category {
   padding: 0 5px;
   width: 1rem;
+  font-weight: 100;
 }
 
 .nearbycard-item {
   color: var(--blackSteak);
   padding: 5px 0 5px 0;
   text-align: left;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 .expanded-nearbycard {
@@ -591,7 +598,14 @@ body {
 }
 
 input[type="checkbox"]:checked + .notification-popup {
+  display: block;
+}
+
+.notification-popup {
   display: none;
+  width: 90%;
+  margin: -40rem auto 0 auto;
+  position: absolute;
 }
 
 .notification-popup span {
@@ -602,10 +616,6 @@ input[type="checkbox"]:checked + .notification-popup {
   color: var(--offWhite);
   background-color: var(--blackSteak);
   padding: 1rem;
-  width: 80%;
   border-radius: 5px;
-  top: 10px;
-  left: 20px;
   z-index: 3;
-  position: absolute;
 }
