@@ -30,7 +30,7 @@ export default class Info extends Component {
           <p className="job-title">Lead Designer</p>
           <p>Nick Dambrosio</p>
           <NavLink to="/">
-            <p className="log-out">Log out</p>
+            <p className="log-out">Back</p>
           </NavLink>
         </div>
       </div>
