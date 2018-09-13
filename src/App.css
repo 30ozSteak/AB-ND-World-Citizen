@@ -519,17 +519,17 @@ body {
 }
 
 .fountainG {
-  position: absolute;
-  top: 0;
-  background-color: rgb(255, 255, 255);
-  width: 10px;
-  height: 10px;
   animation-name: bounce_fountainG;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  transform: scale(0.3);
+  background-color: rgb(255, 255, 255);
   border-radius: 7px;
+  height: 10px;
+  position: absolute;
+  transform: scale(0.3);
+  top: 0;
+  width: 10px;
 }
 
 #fountainG_1 {
