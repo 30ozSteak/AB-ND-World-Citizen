@@ -22,11 +22,6 @@ describe("App", () => {
     expect(wrapper.find("Notifications").length).toEqual(1);
   });
 
-  // it("should render a PageContent component", () => {
-  //   console.log(wrapper.class);
-  //   expect(wrapper.find("PageContent").length).toEqual(1);
-  // });
-
   it("should render the Menu component", () => {
     expect(wrapper.find("Menu").length).toEqual(1);
   });

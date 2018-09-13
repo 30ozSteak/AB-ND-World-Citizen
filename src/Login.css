@@ -8,8 +8,8 @@
 }
 
 form {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 form input {
@@ -19,16 +19,16 @@ form input {
 
 form input,
 button {
-  width: 18rem;
-  margin: 0.5rem auto;
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 20px;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   background-color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 0.5rem auto;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
   text-align: center;
+  width: 18rem;
 }
 
 form button {
