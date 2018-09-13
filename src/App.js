@@ -8,7 +8,6 @@ import InfoButton from "./InfoButton";
 import Notifications from "./Notifications";
 
 export default class App extends Component {
-
   render() {
     return (
       <div className="App">
