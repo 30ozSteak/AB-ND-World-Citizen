@@ -49,6 +49,6 @@ Justine took World Citizen to Turing Demo-Night at the WeWork offices a few week
 
 I told Justine later that that day that I wanted to build the front-end of for World Citizen and take it to Demo-night again. I proposed this idea to the mod instructors, they told me to bring on Alex Bruce as my team-member, and the three of us started right away.
 
-A lot of this app came along pretty easily, despite not looking at React for a month. The biggest issue I ran into was learning React Router, and getting mulitple routes to work on a button click - something we don't learn in mod2. The rest of the app came together fairly well, and I kept the design fairly simple throughout. Alex solved a lot of problems before I even looked at them, and met my excitedness with the app on a daily basis. Our code is nice and clean, and will be easy to update as we go on.
+A lot of this app came along pretty easily, despite not looking at React for a month. The biggest issue I ran into was learning React Router, and getting mulitple routes to work on a button click - something we don't learn in mod2. There was a lot of inspiration used for the overall look of the project, with progressive changes throughout. Alex solved a lot of the functional problems before I even looked at them, and met my overall excitedness with the app on a daily basis. Our code is nice and clean, and will be easy to update as we go on.
 
 I'm really happy with our progress, and can't wait for Demo Night. 
