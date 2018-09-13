@@ -149,11 +149,11 @@ body {
 
 .achievement-header {
   color: var(--blackSteak);
+  font-weight: 100;
   margin: 5px auto;
   padding-left: 1rem;
   text-align: left;
   text-transform: uppercase;
-  font-weight: 100;
 }
 
 .achievement-slider {
