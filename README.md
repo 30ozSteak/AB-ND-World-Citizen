@@ -1,7 +1,7 @@
 # World Citizen
 ## Overview
 
-Heroku: https://gentle-savannah-39287.herokuapp.com/Home
+Heroku: https://gentle-savannah-39287.herokuapp.com
 Trello: https://trello.com/b/iD2ZF5QT
 
 World Citizen is the Gamification of Giving Back. Every time you log a purchase made at charitable company, you'll earn points, achievements, and levels. Compete with other users in your area and help make the world a better place!
