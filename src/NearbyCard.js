@@ -3,7 +3,6 @@ import React, { Component } from "react";
 export default class NearbyCard extends Component {
   constructor() {
     super();
-
     this.state = {
       expanded: false
     };

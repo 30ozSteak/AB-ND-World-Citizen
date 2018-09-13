@@ -4,7 +4,6 @@ import React, { Component } from "react";
 export default class Achievement extends Component {
   constructor() {
     super();
-
     this.state = {
       expanded: false,
       count: 0
