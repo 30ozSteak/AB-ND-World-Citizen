@@ -533,43 +533,43 @@ body {
 }
 
 #fountainG_1 {
-  left: 0;
   animation-delay: 0.6s;
+  left: 0;
 }
 
 #fountainG_2 {
-  left: 10px;
   animation-delay: 0.75s;
+  left: 10px;
 }
 
 #fountainG_3 {
-  left: 21px;
   animation-delay: 0.9s;
+  left: 21px;
 }
 
 #fountainG_4 {
-  left: 31px;
   animation-delay: 1.05s;
+  left: 31px;
 }
 
 #fountainG_5 {
-  left: 42px;
   animation-delay: 1.2s;
+  left: 42px;
 }
 
 #fountainG_6 {
-  left: 52px;
   animation-delay: 1.35s;
+  left: 52px;
 }
 
 #fountainG_7 {
-  left: 63px;
   animation-delay: 1.5s;
+  left: 63px;
 }
 
 #fountainG_8 {
-  left: 73px;
   animation-delay: 1.64s;
+  left: 73px;
 }
 
 @keyframes bounce_fountainG {
@@ -594,31 +594,4 @@ body {
   100% {
     filter: hue-rotate(-90deg);
   }
-}
-
-#check {
-  display: none;
-}
-
-input[type="checkbox"]:checked + .notification-popup {
-  display: block;
-}
-
-.notification-popup {
-  display: none;
-  width: 90%;
-  margin: -40rem auto 0 auto;
-  position: absolute;
-}
-
-.notification-popup span {
-  color: grey;
-}
-
-.notification-popup h4 {
-  color: var(--offWhite);
-  background-color: var(--blackSteak);
-  padding: 1rem;
-  border-radius: 5px;
-  z-index: 3;
 }
