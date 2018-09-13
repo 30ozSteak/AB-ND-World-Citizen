@@ -1,6 +1,6 @@
 * {
-  transition: 0.2s;
   outline: none;
+  transition: 0.2s;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
   --pinkish: linear-gradient(to bottom, #b24592, #f15f79);
   --decent: linear-gradient(to bottom, #00c6ff, #0072ff);
   --tranquil: linear-gradient(to bottom, #4ca1af, #c4e0e5);
-
   height: 100%;
 }
 
@@ -48,8 +47,8 @@ body {
 
 .profile {
   letter-spacing: 5px;
-  text-transform: uppercase;
   margin-top: 1.2rem;
+  text-transform: uppercase;
 }
 
 .menu-button-icon {
