@@ -29,7 +29,8 @@ h4 {
   background-color: var(--offWhite);
   color: var(--blackSteak);
   margin: 3rem auto;
-  height: 35rem;
+  height: 33rem;
+  padding: -3rem;
   width: 80%;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
@@ -46,7 +47,6 @@ h4 {
 p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 1rem;
   font-size: 1.2rem;
 }
 
@@ -55,11 +55,12 @@ p {
   letter-spacing: 3px;
   line-height: 2rem;
   font-size: 0.5rem;
+  margin-top: 2.6rem;
 }
 
 .app-description {
   font-size: 0.6rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 
