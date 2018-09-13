@@ -24,7 +24,6 @@ export default class Play extends Component {
       fetchSent: true
     });
     fetch(
-      
       `https://cors-anywhere.herokuapp.com/https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`
     )
       .then(response =>
@@ -54,21 +53,18 @@ export default class Play extends Component {
     this.setState({
       address: e.target.value
     });
-    // this.getLocation(e.target.value, this.state.city, this.state.state)
   };
 
   setCity = e => {
     this.setState({
       city: e.target.value
     });
-    // this.getLocation(this.state.address, e.target.value, this.state.state)
   };
 
   setTheState = e => {
     this.setState({
       state: e.target.value
     });
-    // this.getLocation(this.state.address, this.state.city, e.target.value)
   };
 
   render() {
