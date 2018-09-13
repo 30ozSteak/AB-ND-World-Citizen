@@ -16,10 +16,10 @@ export default class Notifications extends Component {
         <label className="🦄:" for="check">
           <input type="checkbox" id="check" />
           <div className="notification-popup">
-            <h4>
+            {/* <h4>
               Hey, Come Check Us Out at Turing's Demo Night! -{" "}
               <span>Justine, Alex, Nick</span>
-            </h4>
+            </h4> */}
           </div>
           <img
             id="notifications-icon"

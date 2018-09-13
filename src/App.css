@@ -15,7 +15,7 @@ body {
   --decent: linear-gradient(to bottom, #00c6ff, #0072ff);
   --tranquil: linear-gradient(to bottom, #4ca1af, #c4e0e5);
 
-  height: 18rem;
+  height: 100%;
 }
 
 .App {
