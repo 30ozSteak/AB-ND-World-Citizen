@@ -184,18 +184,18 @@ body {
   color: #aaaaaa;
   font-size: 1rem;
   height: 1rem;
-  vertical-align: middle;
   margin-top: 5px;
+  vertical-align: middle;
 }
 
 .achievement-slider-box {
   background: linear-gradient(to bottom, #4cc4f3, #6ce9fc);
   border-radius: 5px;
-  position: relative;
   bottom: 45px;
-  height: 4.5rem;
-  left: 25px;
   box-shadow: 0px 3px 10px #5693eea6;
+  left: 25px;
+  height: 4.5rem;
+  position: relative;
 }
 
 /* .achievement-slider-box:hover {
