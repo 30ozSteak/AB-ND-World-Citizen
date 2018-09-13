@@ -32,6 +32,10 @@ describe("Login", () => {
     it('should render a form that houses our input field', () => {
     expect(wrapper.find('form').length).toEqual(1);
   });
+
+      it('should render two input fields', () => {
+    expect(wrapper.find('input').length).toEqual(2);
+  });
 });
   
   

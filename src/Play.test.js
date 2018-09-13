@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Home from './Home';
+import Play from './Play';
 
-describe('Home', () => {
+describe('Play', () => {
 
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Home />);
+    wrapper = shallow(<Play />);
   })
 
   it('should exist', () => {
@@ -16,7 +16,13 @@ describe('Home', () => {
   })
 
     it("should have a default empty state", () => {
-    expect(wrapper.state()).toEqual({});
+    expect(wrapper.state()).toEqual({
+      fetchSent: false,
+      expanded: false,
+      address: "",
+      city: "",
+      state: "",
+      location: []
+    });
   });
-
 });
