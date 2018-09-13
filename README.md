@@ -28,6 +28,7 @@ A Turing-project with:
 
 ## Alex Bruce
 Github - [https://github.com/alexbruce1]
+<br>
 When I was originally approached to collaborate on World Citizen, I had no idea what I was getting myself into. Nick asked me if I wanted to help take this back-end project developed in Ruby on Rails, with which (being a front-end developer) I was completely unfamiliar, and convert it to a front-end, mobile-based application with React. Without any hesitation, I agreed, thinking that, if nothing else, it would be an interesting learning experience and a great challenge. Also, with this being my second time through Mod 2, the instructors allowed me to choose between this and recreating the usual Mod 2 React app, Weathrly, again, and on my own.
 
 Originally, I wasn’t sure how well it would go. I hadn’t really looked at React for about 6 weeks or so, and I wasn’t sure if I had a strong enough understanding of it to be able to carry equal weight on World Citizen, especially taking into account the whole Rails-to-React conversion. It turned out not to be a conversion at all, but an entirely new project, just keeping the same general concepts, a wireframe concept of functionality, and an API key. We got started, and React came back, almost like riding a bicycle, strangely enough. Components, props, state, all of it basically fell into place. Not only did the old concepts come back, but new ones became easier to learn, and I contributed a lot more than I expected, which is always a nice feeling.
@@ -35,6 +36,11 @@ Originally, I wasn’t sure how well it would go. I hadn’t really looked at Re
 Long story short, this has been a great experience, it’s something I’m very happy to have done, and I’m excited to implement new concepts in projects in the future.
 
 ## Nick Dambrosio
+Github - [https://github.com/30ozSteak] 
+<br>
+(BEST VIEWED ON AN IPHONE X USING CHROME)
+https://gentle-savannah-39287.herokuapp.com/Home
+
 Justine approached me a little over 2 months ago asking for some design guidance on her database app, World Citizen. It was a website that would calculate the distance between the user and a socially conscious business, and then reward the user with passport stamps every time they log a purchase at those businesses. After her first pitch of it's purpose, hopes, and goals, I asked to be a collaborator.
 
 https://world-citizen.herokuapp.com/
