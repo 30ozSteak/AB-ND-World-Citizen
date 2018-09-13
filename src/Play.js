@@ -23,17 +23,18 @@ export default class Play extends Component {
     this.setState({
       fetchSent: true
     });
+
     fetch(
       `https://cors-anywhere.herokuapp.com/https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`
     )
-      .then(response =>
-        response.json().then(data => {
-          this.setState({
-            location: data
-          });
-        })
-      )
-      .catch(err => console.log(err));
+    .then(response =>
+      response.json().then(data => {
+        this.setState({
+          location: data
+        });
+      })
+    )
+    .catch(err => console.log(err));
   };
 
   expandSearch = () => {
