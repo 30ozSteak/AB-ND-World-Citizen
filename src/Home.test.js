@@ -14,4 +14,8 @@ describe('Home', () => {
     
     expect(wrapper).toBeDefined();
   })
+
+    it("should have a default empty state", () => {
+    expect(wrapper.state()).toEqual({});
+  });
 });
