@@ -504,18 +504,18 @@ body {
 }
 
 .play-description {
+  color: var(--offWhite);
   font-size: 1rem;
   padding: 2rem 2rem 0 2rem;
-  color: var(--offWhite);
 }
 
 /* LOADING ANIMATION */
 #fountainG {
-  position: relative;
-  width: 84px;
   top: 5rem;
   height: 10px;
   margin: auto;
+  position: relative;
+  width: 84px;
 }
 
 .fountainG {
