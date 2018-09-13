@@ -7,11 +7,7 @@ describe('Achievement', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Achievement
-      // stamp="Stamp Test"
-      // trophyIcon="Icon Test"
-      // style="Style Test"
-    />);
+    wrapper = shallow(<Achievement/>);
   })
 
   it('should exist', () => {
@@ -36,13 +32,9 @@ describe('Achievement', () => {
 
   it('should be able to expand a card', () => {
     wrapper = mount(<Achievement />);
-
-    wrapper.find('.achievement-header').simulate('click');
-
-    expect(wrapper.state().expanded).toEqual(true)
-  })
-  
-  it('should ', () => {
     
+    wrapper.find('.achievement-header').simulate('click');
+    
+    expect(wrapper.state().expanded).toEqual(true)
   })
 })
