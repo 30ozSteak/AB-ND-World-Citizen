@@ -109,9 +109,11 @@ export default class Play extends Component {
                 <option value="State" disabled>
                   State
                 </option>
-                {states.map(state => {
+                {
+                  states.map(state => {
                   return <option value={state}> {state} </option>;
-                })}
+                  })
+                }
               </select>
             </div>
           )}
