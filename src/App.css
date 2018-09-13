@@ -198,11 +198,6 @@ body {
   position: relative;
 }
 
-/* .achievement-slider-box:hover {
-  filter: brightness(105%);
-  cursor: pointer;
-} */
-
 .achievement-slider-image {
   height: 3rem;
   width: 3.5rem;
@@ -238,8 +233,8 @@ body {
 
 .achievement-expanded-message {
   color: var(--blackSteak);
-  letter-spacing: 0;
   font-size: 14px;
+  letter-spacing: 0;
 }
 
 /* MENU */
