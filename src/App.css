@@ -167,7 +167,6 @@ body {
   background-color: #6595e4;
   color: var(--offWhite);
   height: 100%;
-  /* width: 40%; */
 }
 
 .grayscale-box {
@@ -176,9 +175,9 @@ body {
 
 .achievement-data-container {
   display: inline-flex;
+  height: 2rem;
   justify-content: space-between;
   width: 100%;
-  height: 2rem;
 }
 
 .achievement-score {
