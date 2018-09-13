@@ -109,12 +109,12 @@ body {
 }
 
 #userImage {
-  width: 5rem;
-  height: 5rem;
   border: 2px solid var(--offWhite);
+  border-radius: 10px;
+  height: 5rem;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 10px;
+  width: 5rem;
 }
 
 #info-earth-icon {
