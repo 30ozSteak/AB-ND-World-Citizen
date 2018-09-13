@@ -40,3 +40,7 @@ form button {
 form button:hover {
   filter: brightness(110%);
 }
+
+.username {
+  margin-top: 5rem;
+}
