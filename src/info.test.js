@@ -10,26 +10,28 @@ describe("Info", () => {
     wrapper = shallow(<Info />);
   });
 
+  it("will direct you to the home route on click", () => {
+    expect(
+      wrapper
+        .find("NavLink")
+        .first()
+        .props().to
+    ).toEqual("/");
+  });
+
   it("should exist", () => {
     expect(wrapper).toBeDefined();
   });
 
-  it("should render three components without crashing", () => {
-    expect(wrapper.find("InfoButton").length).toEqual(1);
-    expect(wrapper.find("MiniGlobe").length).toEqual(1);
-    expect(wrapper.find("NavLink").length).toEqual(1);
+  it("should have a default empty state", () => {
+    expect(wrapper.state()).toEqual({});
   });
 
-  // it("should render a Notifications component", () => {
-  //   expect(wrapper.find("Notifications").length).toEqual(1);
-  // });
+  it("should render the BrandName component", () => {
+    expect(wrapper.find("BrandName").length).toEqual(1);
+  });
 
-  // it("should render a PageContent component", () => {
-  //   console.log(wrapper.class);
-  //   expect(wrapper.find("PageContent").length).toEqual(1);
-  // });
-
-  // it("should render the Menu component", () => {
-  //   expect(wrapper.find("Menu").length).toEqual(1);
-  // });
+  it("should render the NavLink component", () => {
+    expect(wrapper.find("NavLink").length).toEqual(1);
+  });
 });
