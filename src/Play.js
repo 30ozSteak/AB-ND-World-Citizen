@@ -9,7 +9,6 @@ import NearbyCard from "./NearbyCard";
 export default class Play extends Component {
   constructor() {
     super();
-
     this.state = {
       fetchSent: false,
       expanded: false,

@@ -16,7 +16,6 @@ import regionalCitizen from "./Images/regional.svg";
 export default class Home extends Component {
   constructor() {
     super();
-
     this.state = {};
   }
 
