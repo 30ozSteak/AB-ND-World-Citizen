@@ -1,9 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { mount, shallow } from "enzyme";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("App", () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
+
+  it("should exist", () => {
+    expect(wrapper).toBeDefined();
+  });
+
+  it("should render a InfoButton component", () => {
+    expect(wrapper.find("InfoButton").length).toEqual(1);
+  });
+
+  it("should render a Notifications component", () => {
+    expect(wrapper.find("Notifications").length).toEqual(1);
+  });
+
+  // it("should render a PageContent component", () => {
+  //   console.log(wrapper.class);
+  //   expect(wrapper.find("PageContent").length).toEqual(1);
+  // });
+
+  it("should render the Menu component", () => {
+    expect(wrapper.find("Menu").length).toEqual(1);
+  });
 });
