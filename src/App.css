@@ -50,7 +50,7 @@ body {
 }
 
 .menu-button-icon {
-  filter: invert(40%) sepia() saturate(100%) hue-rotate(200deg);
+  filter: invert(40%);
 }
 
 #home-button,
