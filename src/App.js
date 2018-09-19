@@ -16,7 +16,7 @@ export default class App extends Component {
     };
   }
   render() {
-    if (!this.state.showWelcomeMessage) {
+    if (this.state.loggedIn) {
       return (
         <div className="App">
           <PageContent />
@@ -28,11 +28,7 @@ export default class App extends Component {
     }
     return (
       <div className="app">
-        {this.state.showWelcomeMessage && <Welcome />}
-        <Search
-          setLocation={location => this.importLocation(location)}
-          findHome={() => this.findHome()}
-        />
+        <PageContent />
       </div>
     );
   }

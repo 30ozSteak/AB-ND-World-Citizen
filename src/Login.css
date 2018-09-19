@@ -12,33 +12,40 @@ form {
   width: 100%;
 }
 
-form input {
-  display: block;
-  font-size: 1rem;
-}
-
-form input,
-button {
-  background-color: white;
+form button {
   border: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   font-size: 1rem;
   letter-spacing: 2px;
-  margin: 0.5rem auto;
   padding: 1rem 1.5rem;
   text-transform: uppercase;
   text-align: center;
-  width: 18rem;
-}
-
-form button {
-  background: var(--blueSteel);
+  width: 45%;
+  position: absolute;
+  bottom: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 3px solid white;
   color: var(--offWhite);
-  width: 21rem;
 }
 
-form button:hover {
-  filter: brightness(110%);
+.slick-dots {
+  color: white;
+  position: absolute;
+  font-size: 3rem;
+  bottom: -45%;
+}
+
+.slick-dots::before {
+  color: white;
+}
+
+.login-button {
+  left: 15px;
+}
+
+.register-button {
+  right: 15px;
 }
 
 .username {

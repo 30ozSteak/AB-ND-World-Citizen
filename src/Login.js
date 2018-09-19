@@ -22,6 +22,7 @@ export default class Login extends Component {
         <form>
           <NavLink to="/Home">
             <LoginButton />
+            <LoginButton />
           </NavLink>
         </form>
       </div>

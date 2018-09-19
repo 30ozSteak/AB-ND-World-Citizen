@@ -15,6 +15,7 @@ export default class LoginButton extends Component {
       <div>
         <form>
           <button className="login-button">Login</button>
+          <button className="register-button">Register</button>
         </form>
       </div>
     );

@@ -19,9 +19,10 @@ export default class SlickSlider extends Component {
       infinite: false,
       initialSlide: 0,
       dots: true,
+      dotsCSS: "slick-dots",
       arrows: false,
       autoplay: true,
-      speed: 600
+      autoplaySpeed: 2500
     };
     return (
       <div className="container">
