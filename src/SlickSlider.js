@@ -14,10 +14,13 @@ import Butt from "./Butt";
 export default class SlickSlider extends Component {
   render() {
     var settings = {
-      swipeToSlide: true,
+      swipe: true,
       fade: true,
       infinite: true,
-      initialSlide: 0
+      initialSlide: 0,
+      dots: true,
+      arrows: false,
+      autoplay: true
     };
     return (
       <div className="container">

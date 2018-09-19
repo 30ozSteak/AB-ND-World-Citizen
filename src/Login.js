@@ -20,8 +20,6 @@ export default class Login extends Component {
       <div className="welcome-screen">
         <SlickSlider />
         <form>
-          <input type="text" className="username" placeholder="Username" />
-          <input type="password" className="password" placeholder="Password" />
           <NavLink to="/Home">
             <LoginButton />
           </NavLink>

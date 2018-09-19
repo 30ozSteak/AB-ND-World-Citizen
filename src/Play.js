@@ -24,17 +24,18 @@ export default class Play extends Component {
       fetchSent: true
     });
 
+    // not a perm solution
     fetch(
       `https://cors-anywhere.herokuapp.com/https://world-citizen.herokuapp.com/api/v1/stamps/all?address=${address}&city=${city}&state=${state}`
     )
-    .then(response =>
-      response.json().then(data => {
-        this.setState({
-          location: data
-        });
-      })
-    )
-    .catch(err => console.log(err));
+      .then(response =>
+        response.json().then(data => {
+          this.setState({
+            location: data
+          });
+        })
+      )
+      .catch(err => console.log(err));
   };
 
   expandSearch = () => {
@@ -76,7 +77,11 @@ export default class Play extends Component {
         <p className="play-description">
           Search for Charitable Companies near you
         </p>
-        <form className={"play-form " + (this.state.expanded && "play-form-expanded")}>
+        <form
+          className={
+            "play-form " + (this.state.expanded && "play-form-expanded")
+          }
+        >
           <div className="play-search-first-line">
             <input
               onFocus={this.expandSearch}
@@ -109,17 +114,14 @@ export default class Play extends Component {
                 <option value="State" disabled>
                   State
                 </option>
-                {
-                  states.map(state => {
+                {states.map(state => {
                   return <option value={state}> {state} </option>;
-                  })
-                }
+                })}
               </select>
             </div>
           )}
         </form>
-        {
-          !this.state.location.length &&
+        {!this.state.location.length &&
           this.state.fetchSent && (
             <div id="fountainG">
               <div id="fountainG_1" className="fountainG" />
