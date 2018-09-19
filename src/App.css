@@ -31,16 +31,15 @@ body {
 
 .menu {
   background-color: var(--offWhite);
-  height: 8%;
+  height: 4rem;
   position: fixed;
-  top: 86%;
+  bottom: 0;
   width: 100%;
 }
 
 .menu-button {
   display: inline-flex;
   justify-content: space-around;
-  height: 8vh;
   width: 33vw;
 }
 

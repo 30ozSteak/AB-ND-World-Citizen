@@ -8,6 +8,13 @@ import InfoButton from "./InfoButton";
 import Notifications from "./Notifications";
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loggedIn: false,
+      showWelcomeMessage: true
+    };
+  }
   render() {
     return (
       <div className="App">
