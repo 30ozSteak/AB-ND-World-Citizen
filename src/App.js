@@ -16,12 +16,23 @@ export default class App extends Component {
     };
   }
   render() {
+    if (!this.state.showWelcomeMessage) {
+      return (
+        <div className="App">
+          <PageContent />
+          <InfoButton />
+          <Notifications />
+          <Menu />
+        </div>
+      );
+    }
     return (
-      <div className="App">
-        <PageContent />
-        <InfoButton />
-        <Notifications />
-        <Menu />
+      <div className="app">
+        {this.state.showWelcomeMessage && <Welcome />}
+        <Search
+          setLocation={location => this.importLocation(location)}
+          findHome={() => this.findHome()}
+        />
       </div>
     );
   }
