@@ -16,11 +16,12 @@ export default class SlickSlider extends Component {
     var settings = {
       swipe: true,
       fade: true,
-      infinite: true,
+      infinite: false,
       initialSlide: 0,
       dots: true,
       arrows: false,
-      autoplay: true
+      autoplay: true,
+      speed: 600
     };
     return (
       <div className="container">
