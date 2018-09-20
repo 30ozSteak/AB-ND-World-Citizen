@@ -12,9 +12,9 @@ export default class Play extends Component {
     this.state = {
       fetchSent: false,
       expanded: false,
-      address: "",
-      city: "",
-      state: "",
+      address: localStorage.locationAddress || "",
+      city: localStorage.locationCity || "",
+      state: localStorage.locationState || "",
       location: []
     };
   }
@@ -55,18 +55,21 @@ export default class Play extends Component {
     this.setState({
       address: e.target.value
     });
+    localStorage.setItem('locationAddress', e.target.value)
   };
 
   setCity = e => {
     this.setState({
       city: e.target.value
     });
+    localStorage.setItem('locationCity', e.target.value)
   };
 
   setTheState = e => {
     this.setState({
       state: e.target.value
     });
+    localStorage.setItem('locationState', e.target.value)
   };
 
   render() {
