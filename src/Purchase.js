@@ -5,6 +5,12 @@ import "./Purchase.css";
 export default class Purchase extends Component {
   constructor() {
     super();
+
+    this.state = {}
+  }
+
+  handlePurchase = (thingtopass) => {
+    this.props.logPurchase(thingtopass);
   }
 
   render() {
@@ -28,7 +34,7 @@ export default class Purchase extends Component {
           <h2 className="product-name">Percey</h2>
           <p className="product-subtitle">Rose Crystal with Riesling Endcaps</p>
           <p className="product-price">$145.00</p>
-          <p className="log-purchase-button"> Log Purchase </p>{" "}
+          <p className="log-purchase-button" onClick={() => this.handlePurchase('local')} > Log Purchase </p>{" "}
           <div className="product-literal two" />
           <h2 className="product-name">Hughes Narrow</h2>
           <p className="product-subtitle">Jasmine Crystal</p>

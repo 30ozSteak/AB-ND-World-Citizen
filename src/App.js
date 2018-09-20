@@ -14,10 +14,23 @@ export default class App extends Component {
     super();
     this.state = {
       loggedIn: false,
-      showNotification: false
+      showNotification: false,
+      citizenship: {
+        local: 15,
+        district: 0,
+        regional: 10,
+        national: 5,
+        global: 15
+      }
     };
 
     this.displayNotification = this.displayNotification.bind(this);
+  }
+
+  logPurchase = (thingToUpdate) => {
+    let newCitizenship = this.state.citizenship
+    newCitizenship[thingToUpdate] += 5
+    this.setState({ citizenship: newCitizenship })
   }
 
   setLoginState = () => {
@@ -35,7 +48,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <PageContent loggedIn={this.setLoginState} />
+        <PageContent logPurchase={this.logPurchase} citizenship={this.state.citizenship} loggedIn={this.setLoginState} />
         {this.state.loggedIn && <InfoButton />}
         {this.state.showNotification && (
           <Popup displayNotification={this.showNotification} />
