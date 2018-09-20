@@ -81,6 +81,11 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.subtext {
+  margin-top: 7.5rem;
+  font-size: 0.6rem;
+}
+
 @keyframes 🗺️ {
   0% {
     background-position: 0 0;
