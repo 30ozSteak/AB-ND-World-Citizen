@@ -1,20 +1,22 @@
 import React, { Component } from "react";
+import Confetti from 'react-dom-confetti';
 
+const config = {
+  angle: 0,
+  spread: 180,
+  startVelocity: 25,
+  elementCount: 150,
+  decay: 0.94
+};
 
 export default class Achievement extends Component {
   constructor() {
     super();
     this.state = {
       expanded: false,
-      // count: 0
+      confetti: false
     };
   }
-
-  // componentDidMount = () => {
-  //   this.setState({
-  //     count: this.props.points
-  //   });
-  // };
 
   expandCard = () => {
     this.setState({
@@ -22,10 +24,9 @@ export default class Achievement extends Component {
     });
   };
 
-  increaseCount = () => {
-    this.state.count < 20 &&
+  shootConfetti = () => {
     this.setState({
-      count: this.state.count += 1
+      confetti: !this.state.confetti
     })
   }
 
@@ -43,13 +44,15 @@ export default class Achievement extends Component {
             </span>
             <div className={"achievement-slider-box " + (this.props.points < 20 && "grayscale-box") }
               style={{ background: this.props.style }}               
-              onClick={this.increaseCount} >
+              onClick={this.shootConfetti} >
+
               <img
                 className="achievement-slider-image"
                 src={this.props.trophyIcon}
               />
             </div>
           </div>
+          <Confetti active={this.state.confetti} config={config} />
           <div
             onClick={this.expandCard}
             className={"down-arrow " + (this.state.expanded && "up-arrow")}
