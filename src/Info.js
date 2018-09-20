@@ -41,7 +41,7 @@ export default class Info extends Component {
             idea of Doing what you can, when you can.
           </p>
           <a href="https://www.linkedin.com/in/alex-b-bruce/" />
-          <NavLink to="/">
+          <NavLink to="/Home">
             <p className="log-out">Back</p>
           </NavLink>
         </div>

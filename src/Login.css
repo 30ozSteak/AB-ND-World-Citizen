@@ -45,6 +45,13 @@ form button {
   left: 15px;
 }
 
+.login-button:hover,
+.register-button:hover {
+  cursor: pointer;
+  background: white;
+  color: #86a8e7;
+}
+
 .register-button {
   right: 15px;
 }
