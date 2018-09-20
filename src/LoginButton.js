@@ -10,11 +10,15 @@ export default class LoginButton extends Component {
     this.state = {};
   }
 
-  render(props) {
+  render() {
+    console.log(this.props.loggedIn);
     return (
       <div>
         <form>
-          <button className="login-button">Login</button>
+          <button className="login-button" onClick={this.props.loggedIn}>
+            Login
+          </button>
+          <button className="register-button">Register</button>
         </form>
       </div>
     );

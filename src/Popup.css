@@ -1,0 +1,26 @@
+* {
+  --blackSteak: rgb(41, 41, 41);
+  --offWhite: #fcfcfc;
+  --blueSteel: linear-gradient(to bottom, #86a8e7, #a4c0f3);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pop-up {
+  border-radius: 10px;
+  position: fixed;
+  padding: 0.5rem;
+  font-weight: 100;
+  top: 3rem;
+  background-color: var(--offWhite);
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+}
+
+.pop-up p {
+  font-size: 0.8rem;
+}

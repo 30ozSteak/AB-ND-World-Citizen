@@ -14,7 +14,6 @@ body {
   --pinkish: linear-gradient(to bottom, #b24592, #f15f79);
   --decent: linear-gradient(to bottom, #00c6ff, #0072ff);
   --tranquil: linear-gradient(to bottom, #4ca1af, #c4e0e5);
-  height: 100%;
 }
 
 .App {
@@ -32,16 +31,15 @@ body {
 
 .menu {
   background-color: var(--offWhite);
-  height: 8%;
+  height: 4rem;
   position: fixed;
-  top: 92%;
+  bottom: 0;
   width: 100%;
 }
 
 .menu-button {
   display: inline-flex;
   justify-content: space-around;
-  height: 8vh;
   width: 33vw;
 }
 
@@ -52,7 +50,7 @@ body {
 }
 
 .menu-button-icon {
-  filter: invert(40%) sepia() saturate(100%) hue-rotate(200deg);
+  filter: invert(40%);
 }
 
 #home-button,

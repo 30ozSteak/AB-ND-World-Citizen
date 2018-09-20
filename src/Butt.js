@@ -13,6 +13,7 @@ class Butt extends Component {
       <div className="icon">
         <div className="spinning-globe" />
         <BrandName />
+        <p>Give Back, Get Rewards, Have Fun!</p>
         <p>Swipe to Learn More</p>
       </div>
     );
