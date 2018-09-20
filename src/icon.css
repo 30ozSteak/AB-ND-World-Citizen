@@ -76,6 +76,8 @@
 .icon p {
   color: white;
   letter-spacing: 1px;
+  padding-top: 3rem;
+  text-transform: default;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
