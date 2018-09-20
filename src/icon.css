@@ -1,7 +1,3 @@
-/* .icon {
-  margin-bottom: 5rem;
-} */
-
 .spinning-globe {
   width: 200px;
   height: 200px;
@@ -28,44 +24,32 @@
   margin-bottom: 5rem;
 }
 
-.step1icon {
-  width: 128px;
-  height: 128px;
-  background: #fff;
-  margin: 0 auto;
-  top: 100px;
-  background: center / cover url(Images/step1.png);
-  position: relative;
-}
-
-.step2icon {
-  width: 128px;
-  height: 128px;
-  background: #fff;
-  margin: 0 auto;
-  top: 100px;
-  background: center / cover url(Images/step2.png);
-  position: relative;
-}
-
-.step3icon {
-  width: 128px;
-  height: 128px;
-  background: #fff;
-  margin: 0 auto;
-  top: 100px;
-  background: center / cover url(Images/step3.png);
-  position: relative;
-}
-
+.step1icon,
+.step2icon,
+.step3icon,
 .step4icon {
   width: 128px;
   height: 128px;
   background: #fff;
   margin: 0 auto;
-  top: 100px;
-  background: center / cover url(Images/step4.png);
+  top: 150px;
   position: relative;
+}
+
+.step1icon {
+  background: center / cover url(Images/step1.png);
+}
+
+.step2icon {
+  background: center / cover url(Images/step2.png);
+}
+
+.step3icon {
+  background: center / cover url(Images/step3.png);
+}
+
+.step4icon {
+  background: center / cover url(Images/step4.png);
 }
 
 .icon * {
@@ -73,7 +57,7 @@
 }
 
 .icon h1 {
-  margin-top: 5rem;
+  margin-top: 6rem;
   font-size: 3rem;
   font-weight: 200;
   color: var(--offWhite);
@@ -86,7 +70,7 @@
 .step3 h1,
 .step4 h1 {
   font-size: 1.3rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .icon p {

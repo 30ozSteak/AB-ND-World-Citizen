@@ -22,7 +22,6 @@ export default class Login extends Component {
         <form>
           <NavLink to="/Home">
             <LoginButton loggedIn={this.props.loggedIn} />
-            {/* <LoginButton /> */}
           </NavLink>
         </form>
       </div>
