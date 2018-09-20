@@ -12,7 +12,10 @@ export default class Step1 extends Component {
       <div className="icon step1">
         <div className="step1icon" />
         <h1>Shop from Socially Conscious Companies</h1>
-        <p class="more-info"> What does this mean? </p>
+        <p className="step1-details">
+          {" "}
+          (You probably already do this!) more info{" "}
+        </p>
       </div>
     );
   }
