@@ -16,6 +16,8 @@ export default class App extends Component {
       loggedIn: false,
       showNotification: false
     };
+
+    this.displayNotification = this.displayNotification.bind(this);
   }
 
   setLoginState = () => {
@@ -26,9 +28,8 @@ export default class App extends Component {
 
   displayNotification = () => {
     this.setState({
-      showNotification: true
+      showNotification: !this.state.showNotification
     });
-    console.log("hello");
   };
 
   render() {
@@ -39,7 +40,9 @@ export default class App extends Component {
         {this.state.showNotification && (
           <Popup displayNotification={this.showNotification} />
         )}
-        {this.state.loggedIn && <Notifications />}
+        {this.state.loggedIn && (
+          <Notifications displayNotification={this.displayNotification} />
+        )}{" "}
         {this.state.loggedIn && <Menu />}
       </div>
     );

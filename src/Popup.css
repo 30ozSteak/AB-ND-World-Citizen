@@ -10,15 +10,22 @@
 .pop-up {
   border-radius: 10px;
   position: fixed;
-  padding: 0.5rem;
+  padding: 1rem 0;
   font-weight: 100;
   top: 3rem;
   background-color: var(--offWhite);
-  width: 90%;
   text-align: center;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  box-shadow: 4px 4px 10px rgba(34, 34, 34, 0.39);
+  margin: 0 auto;
+  width: 70%;
+  align-self: center;
+}
+
+.pop-up-container {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .pop-up p {
