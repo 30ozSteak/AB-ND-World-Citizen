@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import image from "./Images/me.jpg";
 import Achievement from "./Achievement";
 import Menu from "./Menu";
+import Purchase from "./Purchase";
 import "./App.css";
 import trophyImage from "./Images/trophies/006-award-1.png";
 import globalCitizen from "./Images/global.svg";
@@ -16,7 +17,13 @@ import regionalCitizen from "./Images/regional.svg";
 export default class Home extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      local: 15,
+      district: 0,
+      regional: 10,
+      national: 5,
+      global: 15
+    };
   }
 
   render() {
@@ -33,26 +40,31 @@ export default class Home extends Component {
             stamp={"Local Citizenship"}
             trophyIcon={localCitizen}
             style="var(--blueGreen)"
+            points={this.props.citizenship.local}
           />
           <Achievement
             stamp={"District Citizenship"}
             trophyIcon={districtCitizen}
             style="var(--peachy)"
+            points={this.props.citizenship.district}
           />
           <Achievement
             stamp={"Regional Citizenship"}
             trophyIcon={regionalCitizen}
             style="var(--decent)"
+            points={this.props.citizenship.regional}
             />
           <Achievement
             stamp={"National Citizenship"}
             trophyIcon={nationalCitizen}
             style="var(--tranquil)"
+            points={this.props.citizenship.national}
             />
           <Achievement
             stamp={"Global Citizenship"}
             trophyIcon={globalCitizen}
             style="var(--pinkish)"
+            points={this.props.citizenship.global}
           />
         </section>
       </div>
