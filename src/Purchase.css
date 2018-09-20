@@ -1,7 +1,4 @@
 * {
-  /* padding: 0;
-  margin: 0; */
-  /* box-sizing: border-box; */
   --blackSteak: rgb(41, 41, 41);
   --offWhite: #fcfcfc;
   --blueSteel: linear-gradient(to bottom, #7145e3, #5694ee, #6ce9fc);
@@ -14,25 +11,93 @@
 
 .business-header {
   background: center / cover url(Images/warby.jpg);
-  top: 3rem;
-  height: 15rem;
+  top: 0;
+  height: 16rem;
   position: fixed;
   width: 100%;
-  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  box-shadow: 1px 1px 15px var(--blackSteak);
 }
 
 .purchase-container h1 {
-  position: absolute;
-  top: 16rem;
-  left: 6rem;
-  z-index: -1;
+  z-index: 2;
+  color: var(--blackSteak);
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--blackSteak);
+  padding-bottom: 1rem;
+}
+
+h1 span {
+  font-size: 0.8rem;
 }
 
 .purchase-body {
   width: 90%;
   background-color: var(--offWhite);
-  height: 30rem;
-  margin: 23rem auto 0 auto;
+  height: 38rem;
+  margin: 17rem auto 0 auto;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+  overflow: scroll;
+}
+
+.product-literal {
+  width: 85%;
+  height: 15rem;
+  background: center / contain url(Images/glasses.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.two {
+  background: center / contain url(Images/glasses2.jpeg);
+  background-repeat: no-repeat;
+}
+
+.three {
+  background: center / contain url(Images/glasses3.jpeg);
+  background-repeat: no-repeat;
+}
+
+.product-literal .product-name {
+  font-size: 2rem;
+  color: var(--blackSteak);
+  padding: -2rem 0 1rem 0;
+}
+
+.product-more-info {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--blackSteak);
+}
+
+.product-learn-more {
+  font-size: 0.5rem;
+  display: block;
+  color: var(--blackSteak);
+  text-decoration: none;
+}
+
+.product-learn-more:hover {
+  color: #5694ee;
+  cursor: pointer;
+}
+
+.log-purchase-button {
+  border: 1px solid #5694ee;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: var(--blackSteak);
+  font-weight: 100;
+}
+
+.log-purchase-button:hover {
+  background-color: #5694ee;
+  color: white;
+  cursor: pointer;
+}
+
+.last-item {
+  margin-bottom: 4rem;
 }
