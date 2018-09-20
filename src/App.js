@@ -35,5 +35,3 @@ export default class App extends Component {
     );
   }
 }
-
-// make a method here that makes the state true, pass that down to the info button as props, then on click of the login you'd change the state there.

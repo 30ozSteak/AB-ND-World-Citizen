@@ -16,7 +16,7 @@ export default class SlickSlider extends Component {
     var settings = {
       swipe: true,
       fade: true,
-      infinite: false,
+      infinite: true,
       initialSlide: 0,
       dots: true,
       dotsCSS: "slick-dots",
