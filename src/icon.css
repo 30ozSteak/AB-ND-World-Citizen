@@ -76,13 +76,13 @@
 .icon p {
   color: white;
   letter-spacing: 1px;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   text-transform: default;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .subtext {
-  margin-top: 11rem;
+  /* margin-top: 1rem; */
   font-size: 0.7rem;
 }
 
