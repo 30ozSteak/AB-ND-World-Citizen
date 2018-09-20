@@ -82,8 +82,13 @@
 }
 
 .subtext {
-  /* margin-top: 1rem; */
+  margin-top: 13.5rem;
   font-size: 0.7rem;
+}
+
+.subtext2 {
+  font-size: 0.7rem;
+  margin-top: 14.2rem;
 }
 
 @keyframes 🗺️ {

@@ -476,6 +476,11 @@ body {
   width: 8rem;
 }
 
+.play-purchase-button:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
 .nearbycard-item {
   color: var(--blackSteak);
   font-weight: 200;
