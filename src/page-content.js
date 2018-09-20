@@ -6,6 +6,7 @@ import Play from "./Play";
 import Login from "./Login";
 import Social from "./Social";
 import Info from "./Info";
+import Purchase from "./Purchase";
 
 export const PageContent = ({ loggedIn }) => {
   return (
@@ -14,6 +15,7 @@ export const PageContent = ({ loggedIn }) => {
         <Route exact path="/" render={() => <Login loggedIn={loggedIn} />} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/Play" component={Play} />
+        <Route exact path="/Purchase" component={Purchase} />
         <Route exact path="/Social" component={Social} />
         <Route exact path="/Info" component={Info} />
       </Switch>
