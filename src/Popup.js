@@ -10,8 +10,10 @@ export default class Popup extends Component {
 
   render(props) {
     return (
-      <div class="pop-up">
-        <p> Hey! Come check us out at Turing's Demo Night! </p>
+      <div className="pop-up-container">
+        <div className="pop-up">
+          <p> ❗Come check us out at Turing's Demo Night! 9/20</p>
+        </div>
       </div>
     );
   }

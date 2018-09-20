@@ -6,6 +6,7 @@ import notificationImage from "./Images/notification.svg";
 export default class Notifications extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render(props) {
@@ -13,7 +14,7 @@ export default class Notifications extends Component {
       <div>
         <div className="notification-dot" />
         <img
-          onClick={this.props.showNotification}
+          onClick={this.props.displayNotification}
           id="notifications-icon"
           alt="what you click on to get to the notifications page"
           src={notificationImage}
@@ -21,10 +22,4 @@ export default class Notifications extends Component {
       </div>
     );
   }
-}
-
-{
-  /* <section className={props.sevenHourButton} onClick={() => {props.pageSet('sevenHour')}}>
-<h4>Seven-Hour</h4>
-</section> */
 }
