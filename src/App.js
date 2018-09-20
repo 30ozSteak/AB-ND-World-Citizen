@@ -18,11 +18,16 @@ export default class App extends Component {
   }
 
   setLoginState = () => {
-    console.log("hi");
     this.setState({
       loggedIn: true
     });
-    console.log("hey");
+  };
+
+  displayNotification = () => {
+    this.setState({
+      showNotification: true
+    });
+    console.log("hello");
   };
 
   render() {
@@ -30,7 +35,9 @@ export default class App extends Component {
       <div className="App">
         <PageContent loggedIn={this.setLoginState} />
         {this.state.loggedIn && <InfoButton />}
-        {this.state.showNotification && <Popup />}
+        {this.state.showNotification && (
+          <Popup displayNotification={this.showNotification} />
+        )}
         {this.state.loggedIn && <Notifications />}
         {this.state.loggedIn && <Menu />}
       </div>
