@@ -29,7 +29,9 @@ export default class App extends Component {
 
   logPurchase = (thingToUpdate) => {
     let newCitizenship = this.state.citizenship
-    newCitizenship[thingToUpdate] += 5
+    if (this.state.citizenship[thingToUpdate] < 20) {
+      newCitizenship[thingToUpdate] += 5
+    }
     this.setState({ citizenship: newCitizenship })
   }
 
