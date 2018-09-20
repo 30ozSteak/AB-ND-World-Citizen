@@ -7,6 +7,7 @@ import { PageContent } from "./page-content";
 import InfoButton from "./InfoButton";
 import Notifications from "./Notifications";
 import Popup from "./Popup";
+import Purchase from "./Purchase";
 
 export default class App extends Component {
   constructor() {

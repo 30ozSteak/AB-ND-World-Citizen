@@ -1,0 +1,38 @@
+* {
+  /* padding: 0;
+  margin: 0; */
+  /* box-sizing: border-box; */
+  --blackSteak: rgb(41, 41, 41);
+  --offWhite: #fcfcfc;
+  --blueSteel: linear-gradient(to bottom, #7145e3, #5694ee, #6ce9fc);
+  --peachy: linear-gradient(to bottom, #fd746c, #ff9068);
+  --blueGreen: linear-gradient(to bottom, #c2e59c, #64b3f4);
+  --pinkish: linear-gradient(to bottom, #b24592, #f15f79);
+  --decent: linear-gradient(to bottom, #00c6ff, #0072ff);
+  --tranquil: linear-gradient(to bottom, #4ca1af, #c4e0e5);
+}
+
+.business-header {
+  background: center / cover url(Images/warby.jpg);
+  top: 3rem;
+  height: 15rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+}
+
+.purchase-container h1 {
+  position: absolute;
+  top: 16rem;
+  left: 6rem;
+  z-index: -1;
+}
+
+.purchase-body {
+  width: 90%;
+  background-color: var(--offWhite);
+  height: 30rem;
+  margin: 23rem auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.39);
+}
