@@ -31,9 +31,10 @@ form button {
 
 .slick-dots {
   color: white;
-  position: absolute;
+  position: fixed;
   font-size: 3rem;
-  bottom: -45%;
+  bottom: 6rem;
+  left: 0;
 }
 
 .slick-dots::before {

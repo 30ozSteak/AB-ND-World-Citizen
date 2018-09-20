@@ -7,11 +7,11 @@ import Login from "./Login";
 import Social from "./Social";
 import Info from "./Info";
 
-export const PageContent = () => {
+export const PageContent = ({ loggedIn }) => {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={Login} />
+        <Route exact path="/" render={() => <Login loggedIn={loggedIn} />} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/Play" component={Play} />
         <Route exact path="/Social" component={Social} />

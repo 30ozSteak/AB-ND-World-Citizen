@@ -15,21 +15,25 @@ export default class App extends Component {
       showWelcomeMessage: true
     };
   }
+
+  setLoginState = () => {
+    console.log("hi");
+    this.setState({
+      loggedIn: true
+    });
+    console.log("hey");
+  };
+
   render() {
-    if (this.state.loggedIn) {
-      return (
-        <div className="App">
-          <PageContent />
-          <InfoButton />
-          <Notifications />
-          <Menu />
-        </div>
-      );
-    }
     return (
-      <div className="app">
-        <PageContent />
+      <div className="App">
+        <PageContent loggedIn={this.setLoginState} />
+        {this.state.loggedIn && <InfoButton />}
+        {this.state.loggedIn && <Notifications />}
+        {this.state.loggedIn && <Menu />}
       </div>
     );
   }
 }
+
+// make a method here that makes the state true, pass that down to the info button as props, then on click of the login you'd change the state there.

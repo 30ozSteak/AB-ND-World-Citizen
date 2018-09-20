@@ -12,17 +12,17 @@ import SlickSlider from "./SlickSlider";
 export default class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
 
-  render(props) {
+  render() {
+    console.log(this.props.loggedIn);
     return (
       <div className="welcome-screen">
         <SlickSlider />
         <form>
           <NavLink to="/Home">
-            <LoginButton />
-            <LoginButton />
+            <LoginButton loggedIn={this.props.loggedIn} />
+            {/* <LoginButton /> */}
           </NavLink>
         </form>
       </div>
