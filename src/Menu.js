@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ import React, { Component } from "react";
 
 import MenuButton from "./MenuButton";
 import homeImage from "./Images/home.svg";
@@ -16,13 +16,7 @@ export default class Menu extends Component {
   render() {
     return (
       <div className="menu">
-        {/* <NavLink to="/Home">
-          <MenuButton
-            id="home-button"
-            icon={homeImage}
-            purpose={"home-button"}
-          /> */}
-        <NavLink to="/Purchase">
+        <NavLink to="/Home">
           <MenuButton
             id="home-button"
             icon={homeImage}
